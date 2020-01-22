@@ -11,7 +11,7 @@ Including:
 
 The dataset of robot's images containt 3 classes of object:
 1. Ball (ballon)
-2. Human (humain)
+2. Human (humain)(Useless)
 3. Robot (robot)
 
 
