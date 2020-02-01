@@ -1,4 +1,4 @@
-classes= 2
+classes= 3
 train  = data/MSLRobotBallonButDetection/train.txt
 valid  = data/MSLRobotBallonButDetection/val.txt
 names = data/MSLRobotBallonButDetection/MSLRobotBallonButDetection.names

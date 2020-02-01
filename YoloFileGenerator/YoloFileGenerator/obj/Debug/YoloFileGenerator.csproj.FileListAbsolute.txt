@@ -8,3 +8,13 @@ C:\Users\Valentin\Desktop\YoloFileGenerator\YoloFileGenerator\obj\Debug\YoloFile
 C:\Users\Valentin\Desktop\YoloFileGenerator\YoloFileGenerator\obj\Debug\YoloFileGenerator.csproj.CoreCompileInputs.cache
 C:\Users\Valentin\Desktop\YoloFileGenerator\YoloFileGenerator\obj\Debug\YoloFileGenerator.exe
 C:\Users\Valentin\Desktop\YoloFileGenerator\YoloFileGenerator\obj\Debug\YoloFileGenerator.pdb
+C:\GITHUB\Yolo-Dataset-Project\YoloFileGenerator\YoloFileGenerator\bin\Debug\YoloFileGenerator.exe.config
+C:\GITHUB\Yolo-Dataset-Project\YoloFileGenerator\YoloFileGenerator\bin\Debug\YoloFileGenerator.exe
+C:\GITHUB\Yolo-Dataset-Project\YoloFileGenerator\YoloFileGenerator\bin\Debug\YoloFileGenerator.pdb
+C:\GITHUB\Yolo-Dataset-Project\YoloFileGenerator\YoloFileGenerator\obj\Debug\YoloFileGenerator.csprojAssemblyReference.cache
+C:\GITHUB\Yolo-Dataset-Project\YoloFileGenerator\YoloFileGenerator\obj\Debug\YoloFileGenerator.Form1.resources
+C:\GITHUB\Yolo-Dataset-Project\YoloFileGenerator\YoloFileGenerator\obj\Debug\YoloFileGenerator.Properties.Resources.resources
+C:\GITHUB\Yolo-Dataset-Project\YoloFileGenerator\YoloFileGenerator\obj\Debug\YoloFileGenerator.csproj.GenerateResource.cache
+C:\GITHUB\Yolo-Dataset-Project\YoloFileGenerator\YoloFileGenerator\obj\Debug\YoloFileGenerator.csproj.CoreCompileInputs.cache
+C:\GITHUB\Yolo-Dataset-Project\YoloFileGenerator\YoloFileGenerator\obj\Debug\YoloFileGenerator.exe
+C:\GITHUB\Yolo-Dataset-Project\YoloFileGenerator\YoloFileGenerator\obj\Debug\YoloFileGenerator.pdb
