@@ -1,0 +1,10 @@
+C:\Users\Valentin\Desktop\YoloFileGenerator\YoloFileGenerator\bin\Debug\YoloFileGenerator.exe.config
+C:\Users\Valentin\Desktop\YoloFileGenerator\YoloFileGenerator\bin\Debug\YoloFileGenerator.exe
+C:\Users\Valentin\Desktop\YoloFileGenerator\YoloFileGenerator\bin\Debug\YoloFileGenerator.pdb
+C:\Users\Valentin\Desktop\YoloFileGenerator\YoloFileGenerator\obj\Debug\YoloFileGenerator.csprojAssemblyReference.cache
+C:\Users\Valentin\Desktop\YoloFileGenerator\YoloFileGenerator\obj\Debug\YoloFileGenerator.Form1.resources
+C:\Users\Valentin\Desktop\YoloFileGenerator\YoloFileGenerator\obj\Debug\YoloFileGenerator.Properties.Resources.resources
+C:\Users\Valentin\Desktop\YoloFileGenerator\YoloFileGenerator\obj\Debug\YoloFileGenerator.csproj.GenerateResource.cache
+C:\Users\Valentin\Desktop\YoloFileGenerator\YoloFileGenerator\obj\Debug\YoloFileGenerator.csproj.CoreCompileInputs.cache
+C:\Users\Valentin\Desktop\YoloFileGenerator\YoloFileGenerator\obj\Debug\YoloFileGenerator.exe
+C:\Users\Valentin\Desktop\YoloFileGenerator\YoloFileGenerator\obj\Debug\YoloFileGenerator.pdb
