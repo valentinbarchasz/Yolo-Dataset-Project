@@ -26,6 +26,7 @@ namespace YoloFileGenerator
             dataGridView1.Rows.Add(row);
             dataGridView1.RowHeadersVisible = false;
             classesList.Add(new Classes() { index = 0, name = "" });
+            comboBoxTypeOfScript.SelectedIndex = 0;
         }
 
         private void buttonGenerateFromNumber_Click(object sender, EventArgs e)
@@ -36,13 +37,14 @@ namespace YoloFileGenerator
         private void buttonOpenFolder_Click(object sender, EventArgs e)
         {
             FolderBrowserDialog fdialog = new FolderBrowserDialog();
+            
             var results=fdialog.ShowDialog();
             if(results == DialogResult.OK && !string.IsNullOrWhiteSpace(fdialog.SelectedPath))
             {
                 labelFolderToScan.Text = "Path: " + fdialog.SelectedPath;
 
                 using (System.IO.StreamWriter file =
-                    new System.IO.StreamWriter(fdialog.SelectedPath + "../train.txt", true))
+                    new System.IO.StreamWriter(fdialog.SelectedPath + "../train.txt", false))
                 {
                     
                     foreach (string filePath in Directory.GetFiles(fdialog.SelectedPath))
@@ -64,7 +66,7 @@ namespace YoloFileGenerator
                 labelFolderToScan.Text = "Path: " + fdialog.SelectedPath;
 
                 using (System.IO.StreamWriter file =
-                    new System.IO.StreamWriter(fdialog.SelectedPath + "../val.txt", true))
+                    new System.IO.StreamWriter(fdialog.SelectedPath + "../val.txt", false))
                 {
 
                     foreach (string filePath in Directory.GetFiles(fdialog.SelectedPath))
@@ -116,7 +118,7 @@ namespace YoloFileGenerator
         private void createNamesFile(string path)
         {
             using (System.IO.StreamWriter file =
-                           new System.IO.StreamWriter(path, true))
+                           new System.IO.StreamWriter(path, false))
             {
 
                 foreach (Classes cls in classesList)
@@ -131,7 +133,7 @@ namespace YoloFileGenerator
         private void createDataFile(string path)
         {
             using (System.IO.StreamWriter file =
-                           new System.IO.StreamWriter(path, true))
+                           new System.IO.StreamWriter(path, false))
             {
                 file.WriteLine("classes= "+classesList.Count.ToString());
                 file.WriteLine("train = data\\" + textBoxDataSetName.Text + "\\train.txt");
@@ -154,12 +156,112 @@ namespace YoloFileGenerator
                     if (Directory.Exists(darknetFolderPath + "\\Darknet\\data\\"+ textBoxDataSetName.Text + "\\"))
                     {
                         createNamesFile(nameFilePath);
+                        createDataFile(dataFilePath);
                     }
                     else
                     {
                         Directory.CreateDirectory(darknetFolderPath + "\\Darknet\\data\\"+textBoxDataSetName.Text + "\\");
                         createNamesFile(nameFilePath);
                         createDataFile(dataFilePath);
+                    }
+                    //On vient recuperer toutes les options de configuration de training
+                    int batchCount = Convert.ToInt32(textBoxBatchCount.Text);
+                    int subdivision = Convert.ToInt32(textBoxSubdivision.Text);
+                    int maxBatch = 2000;
+                    string learningRate = textBoxLearningRate.Text;
+                    double learningrate = 0;
+                    int steps80 = 1600;
+                    int steps90 = 1800;
+                    int netSizeWidth = 416;
+                    int netSizeHeight = 416;
+                    bool randomizeResolution = checkBoxRandomResolution.Checked;
+                    bool distinguishLeftRightObj = checkBoxFlip.Checked;
+                    bool trainSmallObject = checkBoxTrainSmallObjects.Checked;
+                    bool trainLotOfObj = checkBoxTrainLotObj.Checked;
+                    int filters = (int)Math.Min((numericUpDownNumberOfClasses.Value + 5) * 3,255);
+                    if (learningRate.Contains('.'))
+                    {
+                        learningrate=Convert.ToDouble(learningRate.Replace('.', ','));
+                    }
+                    else
+                    {
+                        learningrate = Convert.ToDouble(learningRate);
+                    }
+
+                    if(checkBoxStepsAuto.Checked)
+                    {
+                        steps80 = (int)(0.8 * maxBatch);
+                        steps90 = (int)(0.9 * maxBatch);
+                    }
+                    else
+                    {
+                        string[] strTab = textBoxSteps.Text.Split(',');
+                        steps80 = Convert.ToInt32(strTab[0]);
+                        steps90 = Convert.ToInt32(strTab[1]);
+                    }
+                    netSizeWidth = Convert.ToInt32(textBoxNetworkWidth.Text);
+                    netSizeHeight = Convert.ToInt32(textBoxNetworkHeight.Text);
+                    
+                    if(checkBoxBatchAuto.Checked)
+                    {
+                        maxBatch = (int)numericUpDownNumberOfClasses.Value * 2000;
+                    }
+                    else
+                    {
+                        maxBatch = Convert.ToInt32(textBoxMaxBatch.Text);
+                    }
+
+                    //On vient lire le fichier model yolov3.cfg
+                    StreamReader defaultConfigFileStream = new StreamReader(@"../../DefaultCFGFiles/yolov3.cfg");
+                    List<string> cfgFileLineList = new List<string>();
+                    string line;
+                    while((line=defaultConfigFileStream.ReadLine())!=null)
+                    {
+                        cfgFileLineList.Add(line);
+                    }
+
+                    //On modifie le fichier original
+                    cfgFileLineList[3-1] = "batch= " + batchCount.ToString();
+                    cfgFileLineList[4 - 1] = "subdivisions= " + subdivision.ToString();
+                    cfgFileLineList[20 - 1] = "max_batches= " + maxBatch.ToString();
+                    cfgFileLineList[22 - 1] = "steps=" + steps80.ToString()+" "+ steps90.ToString();
+                    cfgFileLineList[8 - 1] = "width=" + netSizeWidth.ToString();
+                    cfgFileLineList[9 - 1] = "height=" + netSizeWidth.ToString();
+                    cfgFileLineList[17 - 1] = (distinguishLeftRightObj) ? "flip=" : "";
+                    cfgFileLineList[603 - 1] = "filters=" + filters.ToString();
+                    cfgFileLineList[610 - 1] = "classes=" + numericUpDownNumberOfClasses.Value.ToString();
+                    cfgFileLineList[689 - 1] = "filters=" + filters.ToString();
+                    cfgFileLineList[696 - 1] = "classes=" + numericUpDownNumberOfClasses.Value.ToString();
+                    cfgFileLineList[776 - 1] = "filters=" + filters.ToString();
+                    cfgFileLineList[783 - 1] = "classes=" + numericUpDownNumberOfClasses.Value.ToString();
+                    cfgFileLineList[603 - 1] = "filters=" + filters.ToString();
+                    if(trainSmallObject)
+                    {
+                        cfgFileLineList[717 - 1] = "strides=4";     //Original : strides=2
+                        cfgFileLineList[720 - 1] = "layers = -1, 11";     //Original layers = -1, 36
+                    }
+                    cfgFileLineList[788 - 1] = "random=" + ((randomizeResolution)?"1":"0");
+                    if(trainLotOfObj)
+                    {
+                        cfgFileLineList[789 - 1] = "max=200";
+                    }
+
+                    if (Directory.Exists(darknetFolderPath + "\\Darknet\\cfg\\" ))
+                    {
+
+                    }
+                    else
+                    {
+                        Directory.CreateDirectory(darknetFolderPath + "\\Darknet\\cfg\\" );
+                    }
+                    //On creer le fichier et ecrit son contenu
+                    using (System.IO.StreamWriter file =
+                                  new System.IO.StreamWriter(darknetFolderPath + "\\Darknet\\cfg\\"+ textBoxDataSetName.Text+".cfg", false))
+                    {
+                        foreach(string lne in cfgFileLineList)
+                        {
+                            file.WriteLine(lne);
+                        }
                     }
                 }
             }
@@ -168,9 +270,9 @@ namespace YoloFileGenerator
 
         private void buttonGenCmdFile_Click(object sender, EventArgs e)
         {
-            string cmdPathFile;
-            string cmdLineScript;
-            string mode;
+            string cmdPathFile=null;
+            string cmdLineScript=null;
+            string mode="test";
             bool useAbsolutePath = false; ;
             if(radioButtonCurrentConfig.Checked)
             {
@@ -179,12 +281,25 @@ namespace YoloFileGenerator
             }
             else
             {
+                SaveFileDialog dial = new SaveFileDialog();
+                dial.Filter = "CMD file|*.cmd";
+                var result = dial.ShowDialog();
+                if (result == DialogResult.OK && !string.IsNullOrWhiteSpace(dial.FileName))
+                    cmdPathFile = dial.FileName;
                 useAbsolutePath = true;
             }
             double treshold=0.25;
             if(!string.IsNullOrWhiteSpace(textBoxDetectTreshold.Text))
             {
-                treshold = Convert.ToDouble(textBoxDetectTreshold.Text);
+                if(textBoxDetectTreshold.Text.Contains('.'))
+                {
+                    treshold = Convert.ToDouble(textBoxDetectTreshold.Text.Replace('.',','));
+                }
+                else
+                {
+                    treshold = Convert.ToDouble(textBoxDetectTreshold.Text);
+                }
+                
             }
             string outputFileName=null;
             if (checkBoxExport.Checked)
@@ -194,59 +309,141 @@ namespace YoloFileGenerator
             int gpuNum = (radioButtonGPU0.Checked) ? 0 : 1;
             string inputOpt = "-i";
             if (radioButtonUseInputFile.Checked)
+            {
                 inputOpt = "-i";
+                if (!string.IsNullOrEmpty(inputFilePath))
+                {
+                    if (inputFilePath.Contains(".jpg") || inputFilePath.Contains(".png"))
+                    {
+                        mode = "test";
+                    }
+                    else if (inputFilePath.Contains(".avi") || inputFilePath.Contains(".mp4"))
+                    {
+                        mode = "demo";
+                    }
+                }
+
+            }
             else
+            {
                 inputOpt = "-c";
+                mode = "demo";
+            }
 
             bool multiGPUTrain = checkBoxTrainWithMultiGPU.Checked;
-            int gpuTrainCount = numericUpDownTrainGPUCount.Value;
+            int gpuTrainCount =(int) numericUpDownTrainGPUCount.Value;
             switch(comboBoxTypeOfScript.SelectedIndex)
             {
                 case 0://Training Script
-                    break;
-                case 1://Image detector
-                    if (!string.IsNullOrEmpty(inputFilePath))
+                    mode = "train";
+                    if (!string.IsNullOrEmpty(dataFilePath))
                     {
-                        if (inputFilePath.Contains(".jpg") || inputFilePath.Contains(".png"))
+                        if (!string.IsNullOrWhiteSpace(weightsFilePath))
                         {
-                            mode = "test";
-                            if (!string.IsNullOrEmpty(dataFilePath))
+                            cmdLineScript = MakeCommandLine(useAbsolutePath, mode, dataFilePath, inputOpt, inputFilePath,
+                                                            weightsFilePath, "cfg\\" + textBoxDataSetName.Text + ".cfg", treshold, gpuNum, outputFileName, multiGPUTrain, gpuTrainCount);
+                        }
+                        else
+                        {
+                            var result = MessageBox.Show("Erreur, Must Select Weights File Before generate .cmd File");
+
+                        }
+                    }
+                    else
+                    {
+                        if (radioButtonCurrentConfig.Checked)
+                        {
+                            var result = MessageBox.Show("Erreur, Must Generate Config File Before generate .cmd File");
+                        }
+                        else
+                        {
+                            OpenFileDialog dial = new OpenFileDialog();
+                            dial.Filter = "Data File|*.data";
+                            var result = dial.ShowDialog();
+
+                            if (result == DialogResult.OK && !string.IsNullOrWhiteSpace(dial.FileName))
                             {
-                                if (!string.IsNullOrWhiteSpace(weightsFilePath))
-                                {
-                                    cmdLineScript = MakeCommandLine(useAbsolutePath,mode, dataFilePath, inputOpt, inputFilePath, 
-                                                                    weightsFilePath, "cfg\\" + textBoxDataSetName.Text + ".cfg", treshold, gpuNum, outputFileName, multiGPUTrain, gpuTrainCount);
-                                }
+                                dataFilePath = dial.FileName;
                             }
                         }
+                    }
+                    break;
+                case 1://Image/Video detector
+                    if (!string.IsNullOrEmpty(dataFilePath))
+                    {
+                        if (!string.IsNullOrWhiteSpace(weightsFilePath))
+                        {
+                            cmdLineScript = MakeCommandLine(useAbsolutePath, mode, dataFilePath, inputOpt, inputFilePath,
+                                                            weightsFilePath, "cfg\\" + textBoxDataSetName.Text + ".cfg", treshold, gpuNum, outputFileName, multiGPUTrain, gpuTrainCount);
+                        }
+                        else
+                        {
+                            var result = MessageBox.Show("Erreur, Must Select Weights File Before generate .cmd File");
 
+                        }
+                    }
+                    else
+                    {
+                        if (radioButtonCurrentConfig.Checked)
+                        {
+                            var result = MessageBox.Show("Erreur, Must Generate Config File Before generate .cmd File");
+                        }
+                        else
+                        {
+                            OpenFileDialog dial = new OpenFileDialog();
+                            dial.Filter = "Data File|*.data";
+                            var result = dial.ShowDialog();
+
+                            if (result == DialogResult.OK && !string.IsNullOrWhiteSpace(dial.FileName))
+                            {
+                                dataFilePath = dial.FileName;
+                            }
+                        }
                     }
                     break;
             }
+            if (!useAbsolutePath)
+            {
+                //On verifie si le dossier script existe
+                if (Directory.Exists(darknetFolderPath + "\\Darknet\\script\\"))
+                {
+
+                }
+                else
+                {
+                    Directory.CreateDirectory(darknetFolderPath + "\\Darknet\\script\\");
+
+                }
+            }
+            if(!string.IsNullOrWhiteSpace(cmdPathFile))
+            {
+                //On creer le fichier et ecrit la ligne de commande
+                using (System.IO.StreamWriter file =
+                              new System.IO.StreamWriter(cmdPathFile, false))
+                {
+                    if (!string.IsNullOrWhiteSpace(cmdLineScript))
+                    {
+                        file.WriteLine(cmdLineScript);
+                        file.WriteLine();
+                        file.WriteLine("pause");
+                    }
+                    
+                }
+            }
+            
         }
 
         public string MakeCommandLine(bool useAbsolutePath,string mode, string dataFilePath, string inputOpt, string inputFilePath, 
-                                        string weightFilPathe, string cfgFileName, double treshold, int gpuNum, string outputFilename, bool multiGPUTrain, int GPUTrainCount)
+                                        string weightFilPath, string cfgFilePath, double treshold, int gpuNum, string outputFilename, bool multiGPUTrain, int GPUTrainCount)
         {
             string lineScript=null;
             if (useAbsolutePath)
             {
-                lineScript = "..\\darknet.exe detector " + mode + " " + dataFilePath + " " + cfgFileName +
-                                           " "+ weightFilPathe + " " + inputOpt + " " + gpuNum + " -tresh" + treshold.ToString("F2") + inputFilePath + " -ext_output";
-            }
-            else
-            {
-
-                string inputFileName=inputFilePath.Substring(inputFilePath.LastIndexOf('\\'));
-                string weightFileName= weightFilPathe.Substring(weightFilPathe.LastIndexOf('\\'));
-                string dataFileName = dataFilePath.Substring(dataFilePath.LastIndexOf('\\'));
-
-                lineScript = "..\\darknet.exe detector ";
-                lineScript += mode;
-                if (mode == "training")
+                lineScript = "..\\darknet.exe detector " + mode;
+                lineScript += " " + dataFilePath + " " + cfgFilePath +
+                       " " + weightFilPath;
+                if (mode == "train")
                 {
-                    lineScript+= " " + "data\\" + dataFileName + " " + cfgFileName +
-                                           "Weights\\" + weightFileName;
                     if (multiGPUTrain)
                     {
                         lineScript += " -gpus 0";
@@ -260,11 +457,47 @@ namespace YoloFileGenerator
                 }
                 else
                 {
-                    lineScript +=" " + "data\\" + dataFileName + " " + cfgFileName +
-                                           "Weights\\" + weightFileName + " " + inputOpt + " " + gpuNum;
+                    lineScript +=" " + inputOpt + " " + gpuNum;
                     if (inputOpt != "-c")
                     {
-                        lineScript+= " -tresh" + treshold.ToString("F2");
+                        lineScript += " -tresh " + treshold.ToString("F2").Replace(',', '.');
+                        lineScript += " " + inputFilePath + " -ext_output";
+                        if (outputFilename != null)
+                            lineScript += " -out_filename " + outputFilename;
+                    }
+                }
+            }
+            else
+            {
+
+                string inputFileName = null; 
+                string weightFileName= weightFilPath.Substring(weightFilPath.LastIndexOf('\\')).Remove(0, 1);
+                string dataFileName = dataFilePath.Substring(dataFilePath.LastIndexOf('\\')).Remove(0, 1);
+                 
+                lineScript = "..\\darknet.exe detector ";
+                lineScript += mode;
+                lineScript += " " + "data\\" + dataFileName + " " + cfgFilePath +
+                                           " Weights\\" + weightFileName;
+                if (mode == "train")
+                {
+                    if (multiGPUTrain)
+                    {
+                        lineScript += " -gpus 0";
+                        if (GPUTrainCount > 3)
+                            lineScript += ",1,2,3";
+                        else if (GPUTrainCount > 2)
+                            lineScript += ",1,2";
+                        else if (GPUTrainCount > 1)
+                            lineScript += ",1";
+                    }
+                }
+                else
+                {
+                    inputFileName= inputFilePath.Substring(inputFilePath.LastIndexOf('\\')).Remove(0, 1);
+                    lineScript += " " + inputOpt + " " + gpuNum;
+                    if (inputOpt != "-c")
+                    {
+                        lineScript+= " -tresh " + treshold.ToString("F2").Replace(',','.');
                         lineScript += " " + inputFilePath + " -ext_output";
                         if (outputFilename != null)
                             lineScript += " -out_filename " + outputFilename;
@@ -275,24 +508,33 @@ namespace YoloFileGenerator
 
             return lineScript;
         }
+
         string weightsFilePath;
         private void button1_Click(object sender, EventArgs e)
         {
             OpenFileDialog dial = new OpenFileDialog();
+            dial.Filter = "Weights File|*.weights";
             var result=dial.ShowDialog();
-            if(result == DialogResult.OK && string.IsNullOrWhiteSpace(dial.FileName))
+            
+            if (result == DialogResult.OK && !string.IsNullOrWhiteSpace(dial.FileName))
             {
                 weightsFilePath = dial.FileName;
+                labelWeightFilePath.Text = "Weights File:" + weightsFilePath;
             }
         }
+
         string inputFilePath;
         private void buttonOpenFile_Click(object sender, EventArgs e)
         {
             OpenFileDialog dial = new OpenFileDialog();
+            dial.Filter = "Images Files|*.jpg;*.png" +
+             "|Video Files|*.avi;*.mp4";
             var result = dial.ShowDialog();
-            if (result == DialogResult.OK && string.IsNullOrWhiteSpace(dial.FileName))
+            
+            if (result == DialogResult.OK && !string.IsNullOrWhiteSpace(dial.FileName))
             {
                 inputFilePath = dial.FileName;
+                labelInputFile.Text = "Input File: " + inputFilePath;
             }
         }
     }

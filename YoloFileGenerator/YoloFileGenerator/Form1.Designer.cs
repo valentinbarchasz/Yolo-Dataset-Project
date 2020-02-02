@@ -49,7 +49,7 @@
             this.groupBoxTrainingConfig = new System.Windows.Forms.GroupBox();
             this.groupBox8 = new System.Windows.Forms.GroupBox();
             this.groupBox9 = new System.Windows.Forms.GroupBox();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.checkBoxTrainLotObj = new System.Windows.Forms.CheckBox();
             this.checkBoxTrainSmallObjects = new System.Windows.Forms.CheckBox();
             this.checkBoxFlip = new System.Windows.Forms.CheckBox();
             this.checkBoxRandomResolution = new System.Windows.Forms.CheckBox();
@@ -63,7 +63,7 @@
             this.groupBox5 = new System.Windows.Forms.GroupBox();
             this.label12 = new System.Windows.Forms.Label();
             this.checkBoxStepsAuto = new System.Windows.Forms.CheckBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBoxSteps = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.textBoxLearningRate = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
@@ -81,10 +81,12 @@
             this.textBoxDataSetName = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.numericUpDownTrainGPUCount = new System.Windows.Forms.NumericUpDown();
+            this.checkBoxTrainWithMultiGPU = new System.Windows.Forms.CheckBox();
             this.buttonGenCmdFile = new System.Windows.Forms.Button();
             this.groupBox11 = new System.Windows.Forms.GroupBox();
             this.button1 = new System.Windows.Forms.Button();
-            this.label16 = new System.Windows.Forms.Label();
+            this.labelWeightFilePath = new System.Windows.Forms.Label();
             this.groupBoxGPUTrain = new System.Windows.Forms.GroupBox();
             this.radioButtonGPU1 = new System.Windows.Forms.RadioButton();
             this.radioButtonGPU0 = new System.Windows.Forms.RadioButton();
@@ -102,8 +104,7 @@
             this.radioButtonCustom = new System.Windows.Forms.RadioButton();
             this.label14 = new System.Windows.Forms.Label();
             this.comboBoxTypeOfScript = new System.Windows.Forms.ComboBox();
-            this.checkBoxTrainWithMultiGPU = new System.Windows.Forms.CheckBox();
-            this.numericUpDownTrainGPUCount = new System.Windows.Forms.NumericUpDown();
+            this.button2 = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBoxScanFolder.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -120,10 +121,10 @@
             this.groupBox4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownNumberOfClasses)).BeginInit();
             this.groupBox3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownTrainGPUCount)).BeginInit();
             this.groupBox11.SuspendLayout();
             this.groupBoxGPUTrain.SuspendLayout();
             this.groupBox10.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownTrainGPUCount)).BeginInit();
             this.SuspendLayout();
             // 
             // buttonOpenFolder
@@ -142,7 +143,7 @@
             this.groupBox1.Controls.Add(this.groupBox2);
             this.groupBox1.Location = new System.Drawing.Point(758, 12);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(541, 254);
+            this.groupBox1.Size = new System.Drawing.Size(541, 233);
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Generate \"train.txt\" \"Val.txt\" from image folder";
@@ -155,7 +156,7 @@
             this.groupBoxScanFolder.Controls.Add(this.buttonOpenFolder);
             this.groupBoxScanFolder.Location = new System.Drawing.Point(7, 20);
             this.groupBoxScanFolder.Name = "groupBoxScanFolder";
-            this.groupBoxScanFolder.Size = new System.Drawing.Size(528, 132);
+            this.groupBoxScanFolder.Size = new System.Drawing.Size(528, 109);
             this.groupBoxScanFolder.TabIndex = 1;
             this.groupBoxScanFolder.TabStop = false;
             this.groupBoxScanFolder.Text = "Scan Folder";
@@ -195,9 +196,9 @@
             this.groupBox2.Controls.Add(this.labelStop);
             this.groupBox2.Controls.Add(this.numericUpDownStart);
             this.groupBox2.Controls.Add(this.labelStartNumber);
-            this.groupBox2.Location = new System.Drawing.Point(6, 158);
+            this.groupBox2.Location = new System.Drawing.Point(7, 135);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(523, 90);
+            this.groupBox2.Size = new System.Drawing.Size(528, 92);
             this.groupBox2.TabIndex = 0;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Generate from number";
@@ -246,6 +247,7 @@
             // 
             // groupBoxGenConfigFiles
             // 
+            this.groupBoxGenConfigFiles.Controls.Add(this.button2);
             this.groupBoxGenConfigFiles.Controls.Add(this.groupBox7);
             this.groupBoxGenConfigFiles.Controls.Add(this.buttonGenerateConfigFiles);
             this.groupBoxGenConfigFiles.Controls.Add(this.buttonOpenProjectLocation);
@@ -283,11 +285,11 @@
             // 
             // buttonGenerateConfigFiles
             // 
-            this.buttonGenerateConfigFiles.Location = new System.Drawing.Point(584, 596);
+            this.buttonGenerateConfigFiles.Location = new System.Drawing.Point(591, 596);
             this.buttonGenerateConfigFiles.Name = "buttonGenerateConfigFiles";
             this.buttonGenerateConfigFiles.Size = new System.Drawing.Size(142, 32);
             this.buttonGenerateConfigFiles.TabIndex = 8;
-            this.buttonGenerateConfigFiles.Text = "Generate Config Files";
+            this.buttonGenerateConfigFiles.Text = "Generate Configs Files";
             this.buttonGenerateConfigFiles.UseVisualStyleBackColor = true;
             this.buttonGenerateConfigFiles.Click += new System.EventHandler(this.buttonGenerateConfigFiles_Click);
             // 
@@ -345,7 +347,7 @@
             // 
             // groupBox9
             // 
-            this.groupBox9.Controls.Add(this.checkBox1);
+            this.groupBox9.Controls.Add(this.checkBoxTrainLotObj);
             this.groupBox9.Location = new System.Drawing.Point(6, 91);
             this.groupBox9.Name = "groupBox9";
             this.groupBox9.Size = new System.Drawing.Size(203, 68);
@@ -353,15 +355,15 @@
             this.groupBox9.TabStop = false;
             this.groupBox9.Text = "Train with large amount of objects";
             // 
-            // checkBox1
+            // checkBoxTrainLotObj
             // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(7, 20);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(123, 17);
-            this.checkBox1.TabIndex = 0;
-            this.checkBox1.Text = "Train with lot objects";
-            this.checkBox1.UseVisualStyleBackColor = true;
+            this.checkBoxTrainLotObj.AutoSize = true;
+            this.checkBoxTrainLotObj.Location = new System.Drawing.Point(7, 20);
+            this.checkBoxTrainLotObj.Name = "checkBoxTrainLotObj";
+            this.checkBoxTrainLotObj.Size = new System.Drawing.Size(123, 17);
+            this.checkBoxTrainLotObj.TabIndex = 0;
+            this.checkBoxTrainLotObj.Text = "Train with lot objects";
+            this.checkBoxTrainLotObj.UseVisualStyleBackColor = true;
             // 
             // checkBoxTrainSmallObjects
             // 
@@ -400,8 +402,8 @@
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(141, 54);
             this.label13.TabIndex = 12;
-            this.label13.Text = "Note: if error Out of memory occurs then in .cfg-file\\n you should increase subdi" +
-    "visions=16, 32 or 64";
+            this.label13.Text = "Note: if error Out of memory occurs then in .cfg-file you should increase subdivi" +
+    "sions=16, 32 or 64";
             // 
             // groupBox6
             // 
@@ -464,7 +466,7 @@
             // 
             this.groupBox5.Controls.Add(this.label12);
             this.groupBox5.Controls.Add(this.checkBoxStepsAuto);
-            this.groupBox5.Controls.Add(this.textBox1);
+            this.groupBox5.Controls.Add(this.textBoxSteps);
             this.groupBox5.Controls.Add(this.label6);
             this.groupBox5.Location = new System.Drawing.Point(10, 192);
             this.groupBox5.Name = "groupBox5";
@@ -494,13 +496,13 @@
             this.checkBoxStepsAuto.Text = "Set to automatic";
             this.checkBoxStepsAuto.UseVisualStyleBackColor = true;
             // 
-            // textBox1
+            // textBoxSteps
             // 
-            this.textBox1.Location = new System.Drawing.Point(76, 43);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 7;
-            this.textBox1.Text = "1600,1800";
+            this.textBoxSteps.Location = new System.Drawing.Point(76, 43);
+            this.textBoxSteps.Name = "textBoxSteps";
+            this.textBoxSteps.Size = new System.Drawing.Size(100, 20);
+            this.textBoxSteps.TabIndex = 7;
+            this.textBoxSteps.Text = "1600,1800";
             // 
             // label6
             // 
@@ -670,16 +672,38 @@
             this.groupBox3.Controls.Add(this.groupBox10);
             this.groupBox3.Controls.Add(this.label14);
             this.groupBox3.Controls.Add(this.comboBoxTypeOfScript);
-            this.groupBox3.Location = new System.Drawing.Point(758, 273);
+            this.groupBox3.Location = new System.Drawing.Point(758, 251);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(541, 373);
+            this.groupBox3.Size = new System.Drawing.Size(541, 395);
             this.groupBox3.TabIndex = 3;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Generate \".cmd\" File";
             // 
+            // numericUpDownTrainGPUCount
+            // 
+            this.numericUpDownTrainGPUCount.Location = new System.Drawing.Point(130, 234);
+            this.numericUpDownTrainGPUCount.Maximum = new decimal(new int[] {
+            4,
+            0,
+            0,
+            0});
+            this.numericUpDownTrainGPUCount.Name = "numericUpDownTrainGPUCount";
+            this.numericUpDownTrainGPUCount.Size = new System.Drawing.Size(33, 20);
+            this.numericUpDownTrainGPUCount.TabIndex = 11;
+            // 
+            // checkBoxTrainWithMultiGPU
+            // 
+            this.checkBoxTrainWithMultiGPU.AutoSize = true;
+            this.checkBoxTrainWithMultiGPU.Location = new System.Drawing.Point(8, 235);
+            this.checkBoxTrainWithMultiGPU.Name = "checkBoxTrainWithMultiGPU";
+            this.checkBoxTrainWithMultiGPU.Size = new System.Drawing.Size(122, 17);
+            this.checkBoxTrainWithMultiGPU.TabIndex = 10;
+            this.checkBoxTrainWithMultiGPU.Text = "Train with multi GPU";
+            this.checkBoxTrainWithMultiGPU.UseVisualStyleBackColor = true;
+            // 
             // buttonGenCmdFile
             // 
-            this.buttonGenCmdFile.Location = new System.Drawing.Point(393, 335);
+            this.buttonGenCmdFile.Location = new System.Drawing.Point(393, 357);
             this.buttonGenCmdFile.Name = "buttonGenCmdFile";
             this.buttonGenCmdFile.Size = new System.Drawing.Size(142, 32);
             this.buttonGenCmdFile.TabIndex = 9;
@@ -690,7 +714,7 @@
             // groupBox11
             // 
             this.groupBox11.Controls.Add(this.button1);
-            this.groupBox11.Controls.Add(this.label16);
+            this.groupBox11.Controls.Add(this.labelWeightFilePath);
             this.groupBox11.Controls.Add(this.groupBoxGPUTrain);
             this.groupBox11.Controls.Add(this.radioButtonUseCamera);
             this.groupBox11.Controls.Add(this.radioButtonUseInputFile);
@@ -718,14 +742,14 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // label16
+            // labelWeightFilePath
             // 
-            this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(6, 116);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(68, 13);
-            this.label16.TabIndex = 12;
-            this.label16.Text = "Weights File:";
+            this.labelWeightFilePath.AutoSize = true;
+            this.labelWeightFilePath.Location = new System.Drawing.Point(6, 116);
+            this.labelWeightFilePath.Name = "labelWeightFilePath";
+            this.labelWeightFilePath.Size = new System.Drawing.Size(68, 13);
+            this.labelWeightFilePath.TabIndex = 12;
+            this.labelWeightFilePath.Text = "Weights File:";
             // 
             // groupBoxGPUTrain
             // 
@@ -858,6 +882,7 @@
             // radioButtonCurrentConfig
             // 
             this.radioButtonCurrentConfig.AutoSize = true;
+            this.radioButtonCurrentConfig.Checked = true;
             this.radioButtonCurrentConfig.Location = new System.Drawing.Point(6, 19);
             this.radioButtonCurrentConfig.Name = "radioButtonCurrentConfig";
             this.radioButtonCurrentConfig.Size = new System.Drawing.Size(91, 17);
@@ -873,7 +898,6 @@
             this.radioButtonCustom.Name = "radioButtonCustom";
             this.radioButtonCustom.Size = new System.Drawing.Size(60, 17);
             this.radioButtonCustom.TabIndex = 3;
-            this.radioButtonCustom.TabStop = true;
             this.radioButtonCustom.Text = "Custom";
             this.radioButtonCustom.UseVisualStyleBackColor = true;
             // 
@@ -891,34 +915,20 @@
             this.comboBoxTypeOfScript.FormattingEnabled = true;
             this.comboBoxTypeOfScript.Items.AddRange(new object[] {
             "Training Script",
-            "Image detector",
-            "Video detector"});
+            "Image/Video detector"});
             this.comboBoxTypeOfScript.Location = new System.Drawing.Point(136, 24);
             this.comboBoxTypeOfScript.Name = "comboBoxTypeOfScript";
             this.comboBoxTypeOfScript.Size = new System.Drawing.Size(121, 21);
             this.comboBoxTypeOfScript.TabIndex = 0;
             // 
-            // checkBoxTrainWithMultiGPU
+            // button2
             // 
-            this.checkBoxTrainWithMultiGPU.AutoSize = true;
-            this.checkBoxTrainWithMultiGPU.Location = new System.Drawing.Point(8, 235);
-            this.checkBoxTrainWithMultiGPU.Name = "checkBoxTrainWithMultiGPU";
-            this.checkBoxTrainWithMultiGPU.Size = new System.Drawing.Size(122, 17);
-            this.checkBoxTrainWithMultiGPU.TabIndex = 10;
-            this.checkBoxTrainWithMultiGPU.Text = "Train with multi GPU";
-            this.checkBoxTrainWithMultiGPU.UseVisualStyleBackColor = true;
-            // 
-            // numericUpDownTrainGPUCount
-            // 
-            this.numericUpDownTrainGPUCount.Location = new System.Drawing.Point(130, 234);
-            this.numericUpDownTrainGPUCount.Maximum = new decimal(new int[] {
-            4,
-            0,
-            0,
-            0});
-            this.numericUpDownTrainGPUCount.Name = "numericUpDownTrainGPUCount";
-            this.numericUpDownTrainGPUCount.Size = new System.Drawing.Size(33, 20);
-            this.numericUpDownTrainGPUCount.TabIndex = 11;
+            this.button2.Location = new System.Drawing.Point(6, 596);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(142, 32);
+            this.button2.TabIndex = 10;
+            this.button2.Text = "Generate .cfg File Only";
+            this.button2.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
@@ -956,13 +966,13 @@
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownNumberOfClasses)).EndInit();
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownTrainGPUCount)).EndInit();
             this.groupBox11.ResumeLayout(false);
             this.groupBox11.PerformLayout();
             this.groupBoxGPUTrain.ResumeLayout(false);
             this.groupBoxGPUTrain.PerformLayout();
             this.groupBox10.ResumeLayout(false);
             this.groupBox10.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownTrainGPUCount)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -997,7 +1007,7 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.GroupBox groupBox5;
         private System.Windows.Forms.CheckBox checkBoxStepsAuto;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox textBoxSteps;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox textBoxLearningRate;
         private System.Windows.Forms.Label label7;
@@ -1014,7 +1024,7 @@
         private System.Windows.Forms.GroupBox groupBox7;
         private System.Windows.Forms.GroupBox groupBox8;
         private System.Windows.Forms.GroupBox groupBox9;
-        private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.CheckBox checkBoxTrainLotObj;
         private System.Windows.Forms.CheckBox checkBoxTrainSmallObjects;
         private System.Windows.Forms.CheckBox checkBoxFlip;
         private System.Windows.Forms.CheckBox checkBoxRandomResolution;
@@ -1042,9 +1052,10 @@
         private System.Windows.Forms.TextBox textBoxDetectTreshold;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.Label labelWeightFilePath;
         private System.Windows.Forms.NumericUpDown numericUpDownTrainGPUCount;
         private System.Windows.Forms.CheckBox checkBoxTrainWithMultiGPU;
+        private System.Windows.Forms.Button button2;
     }
 }
 
