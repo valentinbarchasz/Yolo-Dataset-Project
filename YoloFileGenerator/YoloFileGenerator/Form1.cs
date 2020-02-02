@@ -141,15 +141,16 @@ namespace YoloFileGenerator
             }
 
         }
-
+        string dataFilePath;
+        string nameFilePath;
         private void buttonGenerateConfigFiles_Click(object sender, EventArgs e)
         {
             if (!string.IsNullOrWhiteSpace(darknetFolderPath))
             {
                 if (!string.IsNullOrWhiteSpace(textBoxDataSetName.Text))
                 {
-                    string nameFilePath = darknetFolderPath + "\\Darknet\\data\\" + textBoxDataSetName.Text+"\\"+textBoxDataSetName.Text + ".names";
-                    string dataFilePath = darknetFolderPath + "\\Darknet\\data\\" + textBoxDataSetName.Text + "\\"+textBoxDataSetName.Text + ".data";
+                    nameFilePath = darknetFolderPath + "\\Darknet\\data\\" + textBoxDataSetName.Text+"\\"+textBoxDataSetName.Text + ".names";
+                    dataFilePath = darknetFolderPath + "\\Darknet\\data\\" + textBoxDataSetName.Text + "\\"+textBoxDataSetName.Text + ".data";
                     if (Directory.Exists(darknetFolderPath + "\\Darknet\\data\\"+ textBoxDataSetName.Text + "\\"))
                     {
                         createNamesFile(nameFilePath);
@@ -161,6 +162,137 @@ namespace YoloFileGenerator
                         createDataFile(dataFilePath);
                     }
                 }
+            }
+        }
+
+
+        private void buttonGenCmdFile_Click(object sender, EventArgs e)
+        {
+            string cmdPathFile;
+            string cmdLineScript;
+            string mode;
+            bool useAbsolutePath = false; ;
+            if(radioButtonCurrentConfig.Checked)
+            {
+                cmdPathFile = darknetFolderPath + "\\Darknet\\script\\" + textBoxDataSetName.Text+".cmd";
+                useAbsolutePath = false;
+            }
+            else
+            {
+                useAbsolutePath = true;
+            }
+            double treshold=0.25;
+            if(!string.IsNullOrWhiteSpace(textBoxDetectTreshold.Text))
+            {
+                treshold = Convert.ToDouble(textBoxDetectTreshold.Text);
+            }
+            string outputFileName=null;
+            if (checkBoxExport.Checked)
+            {
+                outputFileName = textBoxOutputFileName.Text;
+            }
+            int gpuNum = (radioButtonGPU0.Checked) ? 0 : 1;
+            string inputOpt = "-i";
+            if (radioButtonUseInputFile.Checked)
+                inputOpt = "-i";
+            else
+                inputOpt = "-c";
+
+            bool multiGPUTrain = checkBoxTrainWithMultiGPU.Checked;
+            int gpuTrainCount = numericUpDownTrainGPUCount.Value;
+            switch(comboBoxTypeOfScript.SelectedIndex)
+            {
+                case 0://Training Script
+                    break;
+                case 1://Image detector
+                    if (!string.IsNullOrEmpty(inputFilePath))
+                    {
+                        if (inputFilePath.Contains(".jpg") || inputFilePath.Contains(".png"))
+                        {
+                            mode = "test";
+                            if (!string.IsNullOrEmpty(dataFilePath))
+                            {
+                                if (!string.IsNullOrWhiteSpace(weightsFilePath))
+                                {
+                                    cmdLineScript = MakeCommandLine(useAbsolutePath,mode, dataFilePath, inputOpt, inputFilePath, 
+                                                                    weightsFilePath, "cfg\\" + textBoxDataSetName.Text + ".cfg", treshold, gpuNum, outputFileName, multiGPUTrain, gpuTrainCount);
+                                }
+                            }
+                        }
+
+                    }
+                    break;
+            }
+        }
+
+        public string MakeCommandLine(bool useAbsolutePath,string mode, string dataFilePath, string inputOpt, string inputFilePath, 
+                                        string weightFilPathe, string cfgFileName, double treshold, int gpuNum, string outputFilename, bool multiGPUTrain, int GPUTrainCount)
+        {
+            string lineScript=null;
+            if (useAbsolutePath)
+            {
+                lineScript = "..\\darknet.exe detector " + mode + " " + dataFilePath + " " + cfgFileName +
+                                           " "+ weightFilPathe + " " + inputOpt + " " + gpuNum + " -tresh" + treshold.ToString("F2") + inputFilePath + " -ext_output";
+            }
+            else
+            {
+
+                string inputFileName=inputFilePath.Substring(inputFilePath.LastIndexOf('\\'));
+                string weightFileName= weightFilPathe.Substring(weightFilPathe.LastIndexOf('\\'));
+                string dataFileName = dataFilePath.Substring(dataFilePath.LastIndexOf('\\'));
+
+                lineScript = "..\\darknet.exe detector ";
+                lineScript += mode;
+                if (mode == "training")
+                {
+                    lineScript+= " " + "data\\" + dataFileName + " " + cfgFileName +
+                                           "Weights\\" + weightFileName;
+                    if (multiGPUTrain)
+                    {
+                        lineScript += " -gpus 0";
+                        if (GPUTrainCount > 3)
+                            lineScript += ",1,2,3";
+                        else if (GPUTrainCount > 2)
+                            lineScript += ",1,2";
+                        else if (GPUTrainCount > 1)
+                            lineScript += ",1";
+                    }
+                }
+                else
+                {
+                    lineScript +=" " + "data\\" + dataFileName + " " + cfgFileName +
+                                           "Weights\\" + weightFileName + " " + inputOpt + " " + gpuNum;
+                    if (inputOpt != "-c")
+                    {
+                        lineScript+= " -tresh" + treshold.ToString("F2");
+                        lineScript += " " + inputFilePath + " -ext_output";
+                        if (outputFilename != null)
+                            lineScript += " -out_filename " + outputFilename;
+                    }
+
+                }
+            } 
+
+            return lineScript;
+        }
+        string weightsFilePath;
+        private void button1_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog dial = new OpenFileDialog();
+            var result=dial.ShowDialog();
+            if(result == DialogResult.OK && string.IsNullOrWhiteSpace(dial.FileName))
+            {
+                weightsFilePath = dial.FileName;
+            }
+        }
+        string inputFilePath;
+        private void buttonOpenFile_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog dial = new OpenFileDialog();
+            var result = dial.ShowDialog();
+            if (result == DialogResult.OK && string.IsNullOrWhiteSpace(dial.FileName))
+            {
+                inputFilePath = dial.FileName;
             }
         }
     }
