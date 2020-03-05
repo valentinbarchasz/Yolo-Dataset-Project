@@ -67,6 +67,8 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <None Include="DefaultCFGFiles\yolov3-spp.cfg" />
+    <None Include="DefaultCFGFiles\yolov3-tiny.cfg" />
     <None Include="DefaultCFGFiles\yolov3.cfg" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

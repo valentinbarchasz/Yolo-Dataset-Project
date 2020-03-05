@@ -15,6 +15,5 @@ C:\GITHUB\Yolo-Dataset-Project\YoloFileGenerator\YoloFileGenerator\obj\Debug\Yol
 C:\GITHUB\Yolo-Dataset-Project\YoloFileGenerator\YoloFileGenerator\obj\Debug\YoloFileGenerator.Form1.resources
 C:\GITHUB\Yolo-Dataset-Project\YoloFileGenerator\YoloFileGenerator\obj\Debug\YoloFileGenerator.Properties.Resources.resources
 C:\GITHUB\Yolo-Dataset-Project\YoloFileGenerator\YoloFileGenerator\obj\Debug\YoloFileGenerator.csproj.GenerateResource.cache
-C:\GITHUB\Yolo-Dataset-Project\YoloFileGenerator\YoloFileGenerator\obj\Debug\YoloFileGenerator.csproj.CoreCompileInputs.cache
 C:\GITHUB\Yolo-Dataset-Project\YoloFileGenerator\YoloFileGenerator\obj\Debug\YoloFileGenerator.exe
 C:\GITHUB\Yolo-Dataset-Project\YoloFileGenerator\YoloFileGenerator\obj\Debug\YoloFileGenerator.pdb

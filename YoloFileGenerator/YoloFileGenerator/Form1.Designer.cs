@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.buttonOpenFolder = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.groupBoxScanFolder = new System.Windows.Forms.GroupBox();
@@ -41,6 +42,7 @@
             this.numericUpDownStart = new System.Windows.Forms.NumericUpDown();
             this.labelStartNumber = new System.Windows.Forms.Label();
             this.groupBoxGenConfigFiles = new System.Windows.Forms.GroupBox();
+            this.button2 = new System.Windows.Forms.Button();
             this.groupBox7 = new System.Windows.Forms.GroupBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.buttonGenerateConfigFiles = new System.Windows.Forms.Button();
@@ -55,11 +57,11 @@
             this.checkBoxRandomResolution = new System.Windows.Forms.CheckBox();
             this.label13 = new System.Windows.Forms.Label();
             this.groupBox6 = new System.Windows.Forms.GroupBox();
-            this.label11 = new System.Windows.Forms.Label();
+            this.labelNetSizeInfo = new System.Windows.Forms.Label();
             this.textBoxNetworkHeight = new System.Windows.Forms.TextBox();
-            this.label9 = new System.Windows.Forms.Label();
+            this.labelNetHeight = new System.Windows.Forms.Label();
             this.textBoxNetworkWidth = new System.Windows.Forms.TextBox();
-            this.label8 = new System.Windows.Forms.Label();
+            this.labelNetWidth = new System.Windows.Forms.Label();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
             this.label12 = new System.Windows.Forms.Label();
             this.checkBoxStepsAuto = new System.Windows.Forms.CheckBox();
@@ -74,8 +76,8 @@
             this.textBoxMaxBatch = new System.Windows.Forms.TextBox();
             this.checkBoxBatchAuto = new System.Windows.Forms.CheckBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
+            this.labelSubdivisions = new System.Windows.Forms.Label();
+            this.labelBatchCount = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.numericUpDownNumberOfClasses = new System.Windows.Forms.NumericUpDown();
             this.textBoxDataSetName = new System.Windows.Forms.TextBox();
@@ -104,7 +106,14 @@
             this.radioButtonCustom = new System.Windows.Forms.RadioButton();
             this.label14 = new System.Windows.Forms.Label();
             this.comboBoxTypeOfScript = new System.Windows.Forms.ComboBox();
-            this.button2 = new System.Windows.Forms.Button();
+            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
+            this.labelChannels = new System.Windows.Forms.Label();
+            this.numericUpDownChannels = new System.Windows.Forms.NumericUpDown();
+            this.groupBox12 = new System.Windows.Forms.GroupBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.comboBoxYoloModel = new System.Windows.Forms.ComboBox();
+            this.radioButtonTrainingCFG = new System.Windows.Forms.RadioButton();
+            this.radioButtonTestingCFG = new System.Windows.Forms.RadioButton();
             this.groupBox1.SuspendLayout();
             this.groupBoxScanFolder.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -125,6 +134,8 @@
             this.groupBox11.SuspendLayout();
             this.groupBoxGPUTrain.SuspendLayout();
             this.groupBox10.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownChannels)).BeginInit();
+            this.groupBox12.SuspendLayout();
             this.SuspendLayout();
             // 
             // buttonOpenFolder
@@ -264,6 +275,15 @@
             this.groupBoxGenConfigFiles.TabStop = false;
             this.groupBoxGenConfigFiles.Text = "Generate config files";
             // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(6, 596);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(142, 32);
+            this.button2.TabIndex = 10;
+            this.button2.Text = "Generate .cfg File Only";
+            this.button2.UseVisualStyleBackColor = true;
+            // 
             // groupBox7
             // 
             this.groupBox7.Controls.Add(this.dataGridView1);
@@ -314,6 +334,9 @@
             // 
             // groupBoxTrainingConfig
             // 
+            this.groupBoxTrainingConfig.Controls.Add(this.groupBox12);
+            this.groupBoxTrainingConfig.Controls.Add(this.numericUpDownChannels);
+            this.groupBoxTrainingConfig.Controls.Add(this.labelChannels);
             this.groupBoxTrainingConfig.Controls.Add(this.groupBox8);
             this.groupBoxTrainingConfig.Controls.Add(this.label13);
             this.groupBoxTrainingConfig.Controls.Add(this.groupBox6);
@@ -323,8 +346,8 @@
             this.groupBoxTrainingConfig.Controls.Add(this.textBoxBatchCount);
             this.groupBoxTrainingConfig.Controls.Add(this.textBoxSubdivision);
             this.groupBoxTrainingConfig.Controls.Add(this.groupBox4);
-            this.groupBoxTrainingConfig.Controls.Add(this.label4);
-            this.groupBoxTrainingConfig.Controls.Add(this.label3);
+            this.groupBoxTrainingConfig.Controls.Add(this.labelSubdivisions);
+            this.groupBoxTrainingConfig.Controls.Add(this.labelBatchCount);
             this.groupBoxTrainingConfig.Location = new System.Drawing.Point(7, 239);
             this.groupBoxTrainingConfig.Name = "groupBoxTrainingConfig";
             this.groupBoxTrainingConfig.Size = new System.Drawing.Size(726, 351);
@@ -338,9 +361,9 @@
             this.groupBox8.Controls.Add(this.checkBoxTrainSmallObjects);
             this.groupBox8.Controls.Add(this.checkBoxFlip);
             this.groupBox8.Controls.Add(this.checkBoxRandomResolution);
-            this.groupBox8.Location = new System.Drawing.Point(339, 19);
+            this.groupBox8.Location = new System.Drawing.Point(339, 76);
             this.groupBox8.Name = "groupBox8";
-            this.groupBox8.Size = new System.Drawing.Size(381, 326);
+            this.groupBox8.Size = new System.Drawing.Size(381, 269);
             this.groupBox8.TabIndex = 13;
             this.groupBox8.TabStop = false;
             this.groupBox8.Text = "Advanced options";
@@ -350,7 +373,7 @@
             this.groupBox9.Controls.Add(this.checkBoxTrainLotObj);
             this.groupBox9.Location = new System.Drawing.Point(6, 91);
             this.groupBox9.Name = "groupBox9";
-            this.groupBox9.Size = new System.Drawing.Size(203, 68);
+            this.groupBox9.Size = new System.Drawing.Size(203, 50);
             this.groupBox9.TabIndex = 3;
             this.groupBox9.TabStop = false;
             this.groupBox9.Text = "Train with large amount of objects";
@@ -370,9 +393,9 @@
             this.checkBoxTrainSmallObjects.AutoSize = true;
             this.checkBoxTrainSmallObjects.Location = new System.Drawing.Point(6, 67);
             this.checkBoxTrainSmallObjects.Name = "checkBoxTrainSmallObjects";
-            this.checkBoxTrainSmallObjects.Size = new System.Drawing.Size(128, 17);
+            this.checkBoxTrainSmallObjects.Size = new System.Drawing.Size(281, 17);
             this.checkBoxTrainSmallObjects.TabIndex = 2;
-            this.checkBoxTrainSmallObjects.Text = "Train for small objects";
+            this.checkBoxTrainSmallObjects.Text = "Train for small objects (Smaller than 16x16 after resize)";
             this.checkBoxTrainSmallObjects.UseVisualStyleBackColor = true;
             // 
             // checkBoxFlip
@@ -407,26 +430,25 @@
             // 
             // groupBox6
             // 
-            this.groupBox6.Controls.Add(this.label11);
+            this.groupBox6.Controls.Add(this.labelNetSizeInfo);
             this.groupBox6.Controls.Add(this.textBoxNetworkHeight);
-            this.groupBox6.Controls.Add(this.label9);
+            this.groupBox6.Controls.Add(this.labelNetHeight);
             this.groupBox6.Controls.Add(this.textBoxNetworkWidth);
-            this.groupBox6.Controls.Add(this.label8);
+            this.groupBox6.Controls.Add(this.labelNetWidth);
             this.groupBox6.Location = new System.Drawing.Point(10, 270);
             this.groupBox6.Name = "groupBox6";
-            this.groupBox6.Size = new System.Drawing.Size(240, 75);
+            this.groupBox6.Size = new System.Drawing.Size(323, 75);
             this.groupBox6.TabIndex = 11;
             this.groupBox6.TabStop = false;
             this.groupBox6.Text = "Network size";
             // 
-            // label11
+            // labelNetSizeInfo
             // 
-            this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(95, 20);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(136, 13);
-            this.label11.TabIndex = 4;
-            this.label11.Text = "(or any value multiple of 32)";
+            this.labelNetSizeInfo.Location = new System.Drawing.Point(95, 20);
+            this.labelNetSizeInfo.Name = "labelNetSizeInfo";
+            this.labelNetSizeInfo.Size = new System.Drawing.Size(205, 41);
+            this.labelNetSizeInfo.TabIndex = 4;
+            this.labelNetSizeInfo.Text = "(or any value multiple of 32) Higher Value increase precision";
             // 
             // textBoxNetworkHeight
             // 
@@ -436,14 +458,14 @@
             this.textBoxNetworkHeight.TabIndex = 3;
             this.textBoxNetworkHeight.Text = "416";
             // 
-            // label9
+            // labelNetHeight
             // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(6, 48);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(41, 13);
-            this.label9.TabIndex = 2;
-            this.label9.Text = "Height:";
+            this.labelNetHeight.AutoSize = true;
+            this.labelNetHeight.Location = new System.Drawing.Point(6, 48);
+            this.labelNetHeight.Name = "labelNetHeight";
+            this.labelNetHeight.Size = new System.Drawing.Size(41, 13);
+            this.labelNetHeight.TabIndex = 2;
+            this.labelNetHeight.Text = "Height:";
             // 
             // textBoxNetworkWidth
             // 
@@ -453,14 +475,14 @@
             this.textBoxNetworkWidth.TabIndex = 1;
             this.textBoxNetworkWidth.Text = "416";
             // 
-            // label8
+            // labelNetWidth
             // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(7, 20);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(38, 13);
-            this.label8.TabIndex = 0;
-            this.label8.Text = "Width:";
+            this.labelNetWidth.AutoSize = true;
+            this.labelNetWidth.Location = new System.Drawing.Point(7, 20);
+            this.labelNetWidth.Name = "labelNetWidth";
+            this.labelNetWidth.Size = new System.Drawing.Size(38, 13);
+            this.labelNetWidth.TabIndex = 0;
+            this.labelNetWidth.Text = "Width:";
             // 
             // groupBox5
             // 
@@ -597,23 +619,23 @@
             this.label5.TabIndex = 2;
             this.label5.Text = "Max Batch:";
             // 
-            // label4
+            // labelSubdivisions
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(7, 49);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(69, 13);
-            this.label4.TabIndex = 1;
-            this.label4.Text = "Subdivisions:";
+            this.labelSubdivisions.AutoSize = true;
+            this.labelSubdivisions.Location = new System.Drawing.Point(7, 49);
+            this.labelSubdivisions.Name = "labelSubdivisions";
+            this.labelSubdivisions.Size = new System.Drawing.Size(69, 13);
+            this.labelSubdivisions.TabIndex = 1;
+            this.labelSubdivisions.Text = "Subdivisions:";
             // 
-            // label3
+            // labelBatchCount
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(7, 22);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(69, 13);
-            this.label3.TabIndex = 0;
-            this.label3.Text = "Batch Count:";
+            this.labelBatchCount.AutoSize = true;
+            this.labelBatchCount.Location = new System.Drawing.Point(7, 22);
+            this.labelBatchCount.Name = "labelBatchCount";
+            this.labelBatchCount.Size = new System.Drawing.Size(69, 13);
+            this.labelBatchCount.TabIndex = 0;
+            this.labelBatchCount.Text = "Batch Count:";
             // 
             // label2
             // 
@@ -921,14 +943,94 @@
             this.comboBoxTypeOfScript.Size = new System.Drawing.Size(121, 21);
             this.comboBoxTypeOfScript.TabIndex = 0;
             // 
-            // button2
+            // labelChannels
             // 
-            this.button2.Location = new System.Drawing.Point(6, 596);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(142, 32);
-            this.button2.TabIndex = 10;
-            this.button2.Text = "Generate .cfg File Only";
-            this.button2.UseVisualStyleBackColor = true;
+            this.labelChannels.AutoSize = true;
+            this.labelChannels.Location = new System.Drawing.Point(196, 165);
+            this.labelChannels.Name = "labelChannels";
+            this.labelChannels.Size = new System.Drawing.Size(54, 13);
+            this.labelChannels.TabIndex = 14;
+            this.labelChannels.Text = "Channels:";
+            // 
+            // numericUpDownChannels
+            // 
+            this.numericUpDownChannels.Location = new System.Drawing.Point(256, 163);
+            this.numericUpDownChannels.Maximum = new decimal(new int[] {
+            4,
+            0,
+            0,
+            0});
+            this.numericUpDownChannels.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.numericUpDownChannels.Name = "numericUpDownChannels";
+            this.numericUpDownChannels.Size = new System.Drawing.Size(77, 20);
+            this.numericUpDownChannels.TabIndex = 15;
+            this.numericUpDownChannels.Value = new decimal(new int[] {
+            3,
+            0,
+            0,
+            0});
+            // 
+            // groupBox12
+            // 
+            this.groupBox12.Controls.Add(this.radioButtonTestingCFG);
+            this.groupBox12.Controls.Add(this.radioButtonTrainingCFG);
+            this.groupBox12.Controls.Add(this.comboBoxYoloModel);
+            this.groupBox12.Controls.Add(this.label3);
+            this.groupBox12.Location = new System.Drawing.Point(345, 16);
+            this.groupBox12.Name = "groupBox12";
+            this.groupBox12.Size = new System.Drawing.Size(374, 57);
+            this.groupBox12.TabIndex = 16;
+            this.groupBox12.TabStop = false;
+            this.groupBox12.Text = "YoLo Models";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(7, 20);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(95, 13);
+            this.label3.TabIndex = 0;
+            this.label3.Text = "Yolo Model to use:";
+            // 
+            // comboBoxYoloModel
+            // 
+            this.comboBoxYoloModel.FormattingEnabled = true;
+            this.comboBoxYoloModel.Items.AddRange(new object[] {
+            "YoloV3",
+            "YoloV3-Tiny",
+            "YoloV3-Tiny-PRN",
+            "YoloV3-SPP",
+            "csresnext50-panet-spp"});
+            this.comboBoxYoloModel.Location = new System.Drawing.Point(108, 17);
+            this.comboBoxYoloModel.Name = "comboBoxYoloModel";
+            this.comboBoxYoloModel.Size = new System.Drawing.Size(121, 21);
+            this.comboBoxYoloModel.TabIndex = 1;
+            // 
+            // radioButtonTrainingCFG
+            // 
+            this.radioButtonTrainingCFG.AutoSize = true;
+            this.radioButtonTrainingCFG.Checked = true;
+            this.radioButtonTrainingCFG.Location = new System.Drawing.Point(283, 16);
+            this.radioButtonTrainingCFG.Name = "radioButtonTrainingCFG";
+            this.radioButtonTrainingCFG.Size = new System.Drawing.Size(87, 17);
+            this.radioButtonTrainingCFG.TabIndex = 2;
+            this.radioButtonTrainingCFG.TabStop = true;
+            this.radioButtonTrainingCFG.Text = "Training CFG";
+            this.radioButtonTrainingCFG.UseVisualStyleBackColor = true;
+            // 
+            // radioButtonTestingCFG
+            // 
+            this.radioButtonTestingCFG.AutoSize = true;
+            this.radioButtonTestingCFG.Location = new System.Drawing.Point(283, 37);
+            this.radioButtonTestingCFG.Name = "radioButtonTestingCFG";
+            this.radioButtonTestingCFG.Size = new System.Drawing.Size(81, 17);
+            this.radioButtonTestingCFG.TabIndex = 3;
+            this.radioButtonTestingCFG.Text = "TestingCFG";
+            this.radioButtonTestingCFG.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
@@ -973,6 +1075,9 @@
             this.groupBoxGPUTrain.PerformLayout();
             this.groupBox10.ResumeLayout(false);
             this.groupBox10.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownChannels)).EndInit();
+            this.groupBox12.ResumeLayout(false);
+            this.groupBox12.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -1003,8 +1108,8 @@
         private System.Windows.Forms.Button buttonGenerateConfigFiles;
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label labelSubdivisions;
+        private System.Windows.Forms.Label labelBatchCount;
         private System.Windows.Forms.GroupBox groupBox5;
         private System.Windows.Forms.CheckBox checkBoxStepsAuto;
         private System.Windows.Forms.TextBox textBoxSteps;
@@ -1018,9 +1123,9 @@
         private System.Windows.Forms.CheckBox checkBoxBatchAuto;
         private System.Windows.Forms.GroupBox groupBox6;
         private System.Windows.Forms.TextBox textBoxNetworkHeight;
-        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label labelNetHeight;
         private System.Windows.Forms.TextBox textBoxNetworkWidth;
-        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label labelNetWidth;
         private System.Windows.Forms.GroupBox groupBox7;
         private System.Windows.Forms.GroupBox groupBox8;
         private System.Windows.Forms.GroupBox groupBox9;
@@ -1029,7 +1134,7 @@
         private System.Windows.Forms.CheckBox checkBoxFlip;
         private System.Windows.Forms.CheckBox checkBoxRandomResolution;
         private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label labelNetSizeInfo;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.GroupBox groupBox11;
@@ -1056,6 +1161,14 @@
         private System.Windows.Forms.NumericUpDown numericUpDownTrainGPUCount;
         private System.Windows.Forms.CheckBox checkBoxTrainWithMultiGPU;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.ToolTip toolTip1;
+        private System.Windows.Forms.NumericUpDown numericUpDownChannels;
+        private System.Windows.Forms.Label labelChannels;
+        private System.Windows.Forms.GroupBox groupBox12;
+        private System.Windows.Forms.ComboBox comboBoxYoloModel;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.RadioButton radioButtonTestingCFG;
+        private System.Windows.Forms.RadioButton radioButtonTrainingCFG;
     }
 }
 

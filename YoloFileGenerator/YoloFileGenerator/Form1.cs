@@ -27,8 +27,23 @@ namespace YoloFileGenerator
             dataGridView1.RowHeadersVisible = false;
             classesList.Add(new Classes() { index = 0, name = "" });
             comboBoxTypeOfScript.SelectedIndex = 0;
+            comboBoxYoloModel.SelectedIndex = 0;
+            InitializeToolTipText();
+
         }
 
+        private void InitializeToolTipText()
+        {
+            toolTip1.SetToolTip(this.labelBatchCount, "The GPU will process batch/subdivision number of images at any time, but the full batch or iteration would be complete only after all the 64 (as set above) images are processed.");
+            toolTip1.SetToolTip(this.labelSubdivisions, "The GPU will process batch/subdivision number of images at any time, but the full batch or iteration would be complete only after all the 64 (as set above) images are processed.");
+            toolTip1.SetToolTip(this.textBoxSubdivision, "The GPU will process batch/subdivision number of images at any time, but the full batch or iteration would be complete only after all the 64 (as set above) images are processed.");
+            toolTip1.SetToolTip(this.textBoxBatchCount, "The GPU will process batch/subdivision number of images at any time, but the full batch or iteration would be complete only after all the 64 (as set above) images are processed.");
+            toolTip1.SetToolTip(this.textBoxNetworkWidth, "network size (width), so every image will be resized to the network size during Training and Detection");
+            toolTip1.SetToolTip(this.labelNetWidth, "network size (width), so every image will be resized to the network size during Training and Detection");
+            toolTip1.SetToolTip(this.textBoxNetworkHeight, "network size (Height), so every image will be resized to the network size during Training and Detection");
+            toolTip1.SetToolTip(this.labelNetHeight, "network size (Height), so every image will be resized to the network size during Training and Detection");
+
+        }
         private void buttonGenerateFromNumber_Click(object sender, EventArgs e)
         {
 
@@ -174,11 +189,14 @@ namespace YoloFileGenerator
                     int steps90 = 1800;
                     int netSizeWidth = 416;
                     int netSizeHeight = 416;
+                    int channels = 3;           //By default use RGB Images
                     bool randomizeResolution = checkBoxRandomResolution.Checked;
                     bool distinguishLeftRightObj = checkBoxFlip.Checked;
                     bool trainSmallObject = checkBoxTrainSmallObjects.Checked;
                     bool trainLotOfObj = checkBoxTrainLotObj.Checked;
                     int filters = (int)Math.Min((numericUpDownNumberOfClasses.Value + 5) * 3,255);
+                    bool useYoloTiny = false;
+                    bool useStandardYoloV3 = false;
                     if (learningRate.Contains('.'))
                     {
                         learningrate=Convert.ToDouble(learningRate.Replace('.', ','));
@@ -211,10 +229,20 @@ namespace YoloFileGenerator
                         maxBatch = Convert.ToInt32(textBoxMaxBatch.Text);
                     }
 
-                    //On vient lire le fichier model yolov3.cfg
-                    StreamReader defaultConfigFileStream = new StreamReader(@"../../DefaultCFGFiles/yolov3.cfg");
+                    string modelDefaultCfgPath = @"../../DefaultCFGFiles/yolov3.cfg";
+                    //On vient lire le fichier model en fonction de la selection
+                    switch (comboBoxYoloModel.SelectedText)
+                    {
+                        case "YoloV3": modelDefaultCfgPath = @"../../DefaultCFGFiles/yolov3.cfg"; useYoloTiny = false; useStandardYoloV3 = true; break;
+                        case "YoloV3-Tiny": modelDefaultCfgPath = @"../../DefaultCFGFiles/yolov3-tiny.cfg"; useYoloTiny = true; break;
+                        case "YoloV3-Tiny-PRN": modelDefaultCfgPath = @"../../DefaultCFGFiles/yolov3.cfg"; useYoloTiny = true; break;
+                        case "YoloV3-SPP": modelDefaultCfgPath = @"../../DefaultCFGFiles/yolov3-spp.cfg"; useYoloTiny = false; break;
+                        case "csresnext50-panet-spp": modelDefaultCfgPath = @"../../DefaultCFGFiles/yolov3.cfg"; break;
+                    }
+                    StreamReader defaultConfigFileStream = new StreamReader(modelDefaultCfgPath);
                     List<string> cfgFileLineList = new List<string>();
                     string line;
+                    //On copie la totalité du fichier cfg
                     while((line=defaultConfigFileStream.ReadLine())!=null)
                     {
                         cfgFileLineList.Add(line);
@@ -223,27 +251,59 @@ namespace YoloFileGenerator
                     //On modifie le fichier original
                     cfgFileLineList[3-1] = "batch= " + batchCount.ToString();
                     cfgFileLineList[4 - 1] = "subdivisions= " + subdivision.ToString();
+                    cfgFileLineList[10 - 1] = "channels=" + channels.ToString();
                     cfgFileLineList[20 - 1] = "max_batches= " + maxBatch.ToString();
                     cfgFileLineList[22 - 1] = "steps=" + steps80.ToString()+" "+ steps90.ToString();
                     cfgFileLineList[8 - 1] = "width=" + netSizeWidth.ToString();
                     cfgFileLineList[9 - 1] = "height=" + netSizeWidth.ToString();
                     cfgFileLineList[17 - 1] = (distinguishLeftRightObj) ? "flip=" : "";
-                    cfgFileLineList[603 - 1] = "filters=" + filters.ToString();
-                    cfgFileLineList[610 - 1] = "classes=" + numericUpDownNumberOfClasses.Value.ToString();
-                    cfgFileLineList[689 - 1] = "filters=" + filters.ToString();
-                    cfgFileLineList[696 - 1] = "classes=" + numericUpDownNumberOfClasses.Value.ToString();
-                    cfgFileLineList[776 - 1] = "filters=" + filters.ToString();
-                    cfgFileLineList[783 - 1] = "classes=" + numericUpDownNumberOfClasses.Value.ToString();
-                    cfgFileLineList[603 - 1] = "filters=" + filters.ToString();
-                    if(trainSmallObject)
+
+                    //Modifie Filters and classes for each Yolo Layer
+                    if (!useYoloTiny)
                     {
-                        cfgFileLineList[717 - 1] = "strides=4";     //Original : strides=2
-                        cfgFileLineList[720 - 1] = "layers = -1, 11";     //Original layers = -1, 36
+                        if (useStandardYoloV3)
+                        {
+                            //Layer 1
+                            cfgFileLineList[603 - 1] = "filters=" + filters.ToString();
+                            cfgFileLineList[610 - 1] = "classes=" + numericUpDownNumberOfClasses.Value.ToString();
+                            //Layer 2
+                            cfgFileLineList[689 - 1] = "filters=" + filters.ToString();
+                            cfgFileLineList[696 - 1] = "classes=" + numericUpDownNumberOfClasses.Value.ToString();
+                            //Layer 3
+                            cfgFileLineList[776 - 1] = "filters=" + filters.ToString();
+                            cfgFileLineList[783 - 1] = "classes=" + numericUpDownNumberOfClasses.Value.ToString();
+
+                            if (trainSmallObject)
+                            {
+                                cfgFileLineList[717 - 1] = "strides=4";     //Original : strides=2
+                                cfgFileLineList[720 - 1] = "layers = -1, 11";     //Original layers = -1, 36
+                            }
+                            cfgFileLineList[788 - 1] = "random=" + ((randomizeResolution) ? "1" : "0");
+                            if (trainLotOfObj)
+                            {
+                                cfgFileLineList[789 - 1] = "max=200";
+                            }
+                        }
                     }
-                    cfgFileLineList[788 - 1] = "random=" + ((randomizeResolution)?"1":"0");
-                    if(trainLotOfObj)
+                    else
                     {
-                        cfgFileLineList[789 - 1] = "max=200";
+                        //Layer 1
+                        cfgFileLineList[127 - 1] = "filters=" + filters.ToString();
+                        cfgFileLineList[135 - 1] = "classes=" + numericUpDownNumberOfClasses.Value.ToString();
+                        //Layer 2
+                        cfgFileLineList[171 - 1] = "filters=" + filters.ToString();
+                        cfgFileLineList[177 - 1] = "classes=" + numericUpDownNumberOfClasses.Value.ToString();
+
+                        if (trainSmallObject)
+                        {
+                            cfgFileLineList[154 - 1] = "strides=4";     //Original : strides=2
+                            cfgFileLineList[157 - 1] = "layers = -1, 2";     //Original layers = -1, 8
+                        }
+                        cfgFileLineList[182 - 1] = "random=" + ((randomizeResolution) ? "1" : "0");
+                        if (trainLotOfObj)
+                        {
+                            cfgFileLineList[183 - 1] = "max=200";
+                        }
                     }
 
                     if (Directory.Exists(darknetFolderPath + "\\Darknet\\cfg\\" ))
@@ -254,6 +314,7 @@ namespace YoloFileGenerator
                     {
                         Directory.CreateDirectory(darknetFolderPath + "\\Darknet\\cfg\\" );
                     }
+
                     //On creer le fichier et ecrit son contenu
                     using (System.IO.StreamWriter file =
                                   new System.IO.StreamWriter(darknetFolderPath + "\\Darknet\\cfg\\"+ textBoxDataSetName.Text+".cfg", false))
