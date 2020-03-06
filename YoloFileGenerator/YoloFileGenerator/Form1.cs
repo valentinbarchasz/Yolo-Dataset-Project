@@ -160,25 +160,64 @@ namespace YoloFileGenerator
         }
         string dataFilePath;
         string nameFilePath;
+        string existingDataFile;
         private void buttonGenerateConfigFiles_Click(object sender, EventArgs e)
         {
+            bool isParamOK = false;
             if (!string.IsNullOrWhiteSpace(darknetFolderPath))
             {
-                if (!string.IsNullOrWhiteSpace(textBoxDataSetName.Text))
+                if (radioButtonGenerateAllFiles.Checked)
                 {
-                    nameFilePath = darknetFolderPath + "\\Darknet\\data\\" + textBoxDataSetName.Text+"\\"+textBoxDataSetName.Text + ".names";
-                    dataFilePath = darknetFolderPath + "\\Darknet\\data\\" + textBoxDataSetName.Text + "\\"+textBoxDataSetName.Text + ".data";
-                    if (Directory.Exists(darknetFolderPath + "\\Darknet\\data\\"+ textBoxDataSetName.Text + "\\"))
+                    if (!string.IsNullOrWhiteSpace(textBoxDataSetName.Text))
                     {
-                        createNamesFile(nameFilePath);
-                        createDataFile(dataFilePath);
+                        nameFilePath = darknetFolderPath + "\\Darknet\\data\\" + textBoxDataSetName.Text + "\\" + textBoxDataSetName.Text + ".names";
+                        dataFilePath = darknetFolderPath + "\\Darknet\\data\\" + textBoxDataSetName.Text + "\\" + textBoxDataSetName.Text + ".data";
+                        if (Directory.Exists(darknetFolderPath + "\\Darknet\\data\\" + textBoxDataSetName.Text + "\\"))
+                        {
+                            createNamesFile(nameFilePath);
+                            createDataFile(dataFilePath);
+                        }
+                        else
+                        {
+                            Directory.CreateDirectory(darknetFolderPath + "\\Darknet\\data\\" + textBoxDataSetName.Text + "\\");
+                            createNamesFile(nameFilePath);
+                            createDataFile(dataFilePath);
+                        }
+                    }
+                }
+                else
+                {
+                    if (!string.IsNullOrWhiteSpace(existingDataFile))
+                    {
+                        StreamReader dataFileStream = new StreamReader(existingDataFile);
+                        List<string> dataFileLineList = new List<string>();
+                        string line2;
+                        //On copie la totalité du fichier cfg
+                        while ((line2 = dataFileStream.ReadLine()) != null)
+                        {
+                            dataFileLineList.Add(line2);
+                        }
+
+                        string dataFileSplit = dataFileLineList[3].Split('=')[1];
+                        string[] filterDataFile = dataFileSplit.Split('/');
+                        string dataPath = "";
+                        for(int i = 0; i < filterDataFile.Length - 1; i++)
+                        {
+                            dataPath += filterDataFile[i];
+                        }
+
+                        nameFilePath = dataPath;//(dataFileLineList.Count>=3)? dataFileLineList[3] : null;
+                        dataFilePath = existingDataFile;
+
                     }
                     else
                     {
-                        Directory.CreateDirectory(darknetFolderPath + "\\Darknet\\data\\"+textBoxDataSetName.Text + "\\");
-                        createNamesFile(nameFilePath);
-                        createDataFile(dataFilePath);
+
                     }
+                }
+
+                if (isParamOK)
+                {
                     //On vient recuperer toutes les options de configuration de training
                     int batchCount = Convert.ToInt32(textBoxBatchCount.Text);
                     int subdivision = Convert.ToInt32(textBoxSubdivision.Text);
@@ -194,19 +233,19 @@ namespace YoloFileGenerator
                     bool distinguishLeftRightObj = checkBoxFlip.Checked;
                     bool trainSmallObject = checkBoxTrainSmallObjects.Checked;
                     bool trainLotOfObj = checkBoxTrainLotObj.Checked;
-                    int filters = (int)Math.Min((numericUpDownNumberOfClasses.Value + 5) * 3,255);
+                    int filters = (int)Math.Min((numericUpDownNumberOfClasses.Value + 5) * 3, 255);
                     bool useYoloTiny = false;
                     bool useStandardYoloV3 = false;
                     if (learningRate.Contains('.'))
                     {
-                        learningrate=Convert.ToDouble(learningRate.Replace('.', ','));
+                        learningrate = Convert.ToDouble(learningRate.Replace('.', ','));
                     }
                     else
                     {
                         learningrate = Convert.ToDouble(learningRate);
                     }
 
-                    if(checkBoxStepsAuto.Checked)
+                    if (checkBoxStepsAuto.Checked)
                     {
                         steps80 = (int)(0.8 * maxBatch);
                         steps90 = (int)(0.9 * maxBatch);
@@ -219,8 +258,8 @@ namespace YoloFileGenerator
                     }
                     netSizeWidth = Convert.ToInt32(textBoxNetworkWidth.Text);
                     netSizeHeight = Convert.ToInt32(textBoxNetworkHeight.Text);
-                    
-                    if(checkBoxBatchAuto.Checked)
+
+                    if (checkBoxBatchAuto.Checked)
                     {
                         maxBatch = (int)numericUpDownNumberOfClasses.Value * 2000;
                     }
@@ -243,17 +282,17 @@ namespace YoloFileGenerator
                     List<string> cfgFileLineList = new List<string>();
                     string line;
                     //On copie la totalité du fichier cfg
-                    while((line=defaultConfigFileStream.ReadLine())!=null)
+                    while ((line = defaultConfigFileStream.ReadLine()) != null)
                     {
                         cfgFileLineList.Add(line);
                     }
 
                     //On modifie le fichier original
-                    cfgFileLineList[3-1] = "batch= " + batchCount.ToString();
+                    cfgFileLineList[3 - 1] = "batch= " + batchCount.ToString();
                     cfgFileLineList[4 - 1] = "subdivisions= " + subdivision.ToString();
                     cfgFileLineList[10 - 1] = "channels=" + channels.ToString();
                     cfgFileLineList[20 - 1] = "max_batches= " + maxBatch.ToString();
-                    cfgFileLineList[22 - 1] = "steps=" + steps80.ToString()+" "+ steps90.ToString();
+                    cfgFileLineList[22 - 1] = "steps=" + steps80.ToString() + " " + steps90.ToString();
                     cfgFileLineList[8 - 1] = "width=" + netSizeWidth.ToString();
                     cfgFileLineList[9 - 1] = "height=" + netSizeWidth.ToString();
                     cfgFileLineList[17 - 1] = (distinguishLeftRightObj) ? "flip=" : "";
@@ -306,20 +345,20 @@ namespace YoloFileGenerator
                         }
                     }
 
-                    if (Directory.Exists(darknetFolderPath + "\\Darknet\\cfg\\" ))
+                    if (Directory.Exists(darknetFolderPath + "\\Darknet\\cfg\\"))
                     {
 
                     }
                     else
                     {
-                        Directory.CreateDirectory(darknetFolderPath + "\\Darknet\\cfg\\" );
+                        Directory.CreateDirectory(darknetFolderPath + "\\Darknet\\cfg\\");
                     }
 
                     //On creer le fichier et ecrit son contenu
                     using (System.IO.StreamWriter file =
-                                  new System.IO.StreamWriter(darknetFolderPath + "\\Darknet\\cfg\\"+ textBoxDataSetName.Text+".cfg", false))
+                                  new System.IO.StreamWriter(darknetFolderPath + "\\Darknet\\cfg\\" + textBoxDataSetName.Text + ".cfg", false))
                     {
-                        foreach(string lne in cfgFileLineList)
+                        foreach (string lne in cfgFileLineList)
                         {
                             file.WriteLine(lne);
                         }
@@ -596,6 +635,18 @@ namespace YoloFileGenerator
             {
                 inputFilePath = dial.FileName;
                 labelInputFile.Text = "Input File: " + inputFilePath;
+            }
+        }
+
+        private void buttonLoadNameFile_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog dial = new OpenFileDialog();
+            dial.Filter = "Data File|*.data";
+            var result = dial.ShowDialog();
+
+            if (result == DialogResult.OK && !string.IsNullOrWhiteSpace(dial.FileName))
+            {
+                existingDataFile = dial.FileName;
             }
         }
     }

@@ -49,6 +49,13 @@
             this.buttonOpenProjectLocation = new System.Windows.Forms.Button();
             this.labelDarknetFolderPath = new System.Windows.Forms.Label();
             this.groupBoxTrainingConfig = new System.Windows.Forms.GroupBox();
+            this.groupBox12 = new System.Windows.Forms.GroupBox();
+            this.radioButtonTestingCFG = new System.Windows.Forms.RadioButton();
+            this.radioButtonTrainingCFG = new System.Windows.Forms.RadioButton();
+            this.comboBoxYoloModel = new System.Windows.Forms.ComboBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.numericUpDownChannels = new System.Windows.Forms.NumericUpDown();
+            this.labelChannels = new System.Windows.Forms.Label();
             this.groupBox8 = new System.Windows.Forms.GroupBox();
             this.groupBox9 = new System.Windows.Forms.GroupBox();
             this.checkBoxTrainLotObj = new System.Windows.Forms.CheckBox();
@@ -107,13 +114,10 @@
             this.label14 = new System.Windows.Forms.Label();
             this.comboBoxTypeOfScript = new System.Windows.Forms.ComboBox();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
-            this.labelChannels = new System.Windows.Forms.Label();
-            this.numericUpDownChannels = new System.Windows.Forms.NumericUpDown();
-            this.groupBox12 = new System.Windows.Forms.GroupBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.comboBoxYoloModel = new System.Windows.Forms.ComboBox();
-            this.radioButtonTrainingCFG = new System.Windows.Forms.RadioButton();
-            this.radioButtonTestingCFG = new System.Windows.Forms.RadioButton();
+            this.groupBox13 = new System.Windows.Forms.GroupBox();
+            this.buttonLoadNameFile = new System.Windows.Forms.Button();
+            this.radioButtonLoadFromDataFile = new System.Windows.Forms.RadioButton();
+            this.radioButtonGenerateAllFiles = new System.Windows.Forms.RadioButton();
             this.groupBox1.SuspendLayout();
             this.groupBoxScanFolder.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -123,6 +127,8 @@
             this.groupBox7.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.groupBoxTrainingConfig.SuspendLayout();
+            this.groupBox12.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownChannels)).BeginInit();
             this.groupBox8.SuspendLayout();
             this.groupBox9.SuspendLayout();
             this.groupBox6.SuspendLayout();
@@ -134,13 +140,12 @@
             this.groupBox11.SuspendLayout();
             this.groupBoxGPUTrain.SuspendLayout();
             this.groupBox10.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownChannels)).BeginInit();
-            this.groupBox12.SuspendLayout();
+            this.groupBox13.SuspendLayout();
             this.SuspendLayout();
             // 
             // buttonOpenFolder
             // 
-            this.buttonOpenFolder.Location = new System.Drawing.Point(447, 19);
+            this.buttonOpenFolder.Location = new System.Drawing.Point(433, 19);
             this.buttonOpenFolder.Name = "buttonOpenFolder";
             this.buttonOpenFolder.Size = new System.Drawing.Size(75, 23);
             this.buttonOpenFolder.TabIndex = 0;
@@ -152,9 +157,9 @@
             // 
             this.groupBox1.Controls.Add(this.groupBoxScanFolder);
             this.groupBox1.Controls.Add(this.groupBox2);
-            this.groupBox1.Location = new System.Drawing.Point(758, 12);
+            this.groupBox1.Location = new System.Drawing.Point(8, 67);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(541, 233);
+            this.groupBox1.Size = new System.Drawing.Size(527, 160);
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Generate \"train.txt\" \"Val.txt\" from image folder";
@@ -165,16 +170,16 @@
             this.groupBoxScanFolder.Controls.Add(this.labelValFolderPath);
             this.groupBoxScanFolder.Controls.Add(this.labelFolderToScan);
             this.groupBoxScanFolder.Controls.Add(this.buttonOpenFolder);
-            this.groupBoxScanFolder.Location = new System.Drawing.Point(7, 20);
+            this.groupBoxScanFolder.Location = new System.Drawing.Point(7, 19);
             this.groupBoxScanFolder.Name = "groupBoxScanFolder";
-            this.groupBoxScanFolder.Size = new System.Drawing.Size(528, 109);
+            this.groupBoxScanFolder.Size = new System.Drawing.Size(514, 76);
             this.groupBoxScanFolder.TabIndex = 1;
             this.groupBoxScanFolder.TabStop = false;
             this.groupBoxScanFolder.Text = "Scan Folder";
             // 
             // buttonValOpenFolder
             // 
-            this.buttonValOpenFolder.Location = new System.Drawing.Point(447, 44);
+            this.buttonValOpenFolder.Location = new System.Drawing.Point(433, 44);
             this.buttonValOpenFolder.Name = "buttonValOpenFolder";
             this.buttonValOpenFolder.Size = new System.Drawing.Size(75, 23);
             this.buttonValOpenFolder.TabIndex = 3;
@@ -207,16 +212,16 @@
             this.groupBox2.Controls.Add(this.labelStop);
             this.groupBox2.Controls.Add(this.numericUpDownStart);
             this.groupBox2.Controls.Add(this.labelStartNumber);
-            this.groupBox2.Location = new System.Drawing.Point(7, 135);
+            this.groupBox2.Location = new System.Drawing.Point(7, 101);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(528, 92);
+            this.groupBox2.Size = new System.Drawing.Size(514, 50);
             this.groupBox2.TabIndex = 0;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Generate from number";
             // 
             // buttonGenerateFromNumber
             // 
-            this.buttonGenerateFromNumber.Location = new System.Drawing.Point(167, 61);
+            this.buttonGenerateFromNumber.Location = new System.Drawing.Point(276, 15);
             this.buttonGenerateFromNumber.Name = "buttonGenerateFromNumber";
             this.buttonGenerateFromNumber.Size = new System.Drawing.Size(75, 23);
             this.buttonGenerateFromNumber.TabIndex = 4;
@@ -354,6 +359,95 @@
             this.groupBoxTrainingConfig.TabIndex = 5;
             this.groupBoxTrainingConfig.TabStop = false;
             this.groupBoxTrainingConfig.Text = "Training configuration";
+            // 
+            // groupBox12
+            // 
+            this.groupBox12.Controls.Add(this.radioButtonTestingCFG);
+            this.groupBox12.Controls.Add(this.radioButtonTrainingCFG);
+            this.groupBox12.Controls.Add(this.comboBoxYoloModel);
+            this.groupBox12.Controls.Add(this.label3);
+            this.groupBox12.Location = new System.Drawing.Point(345, 16);
+            this.groupBox12.Name = "groupBox12";
+            this.groupBox12.Size = new System.Drawing.Size(374, 57);
+            this.groupBox12.TabIndex = 16;
+            this.groupBox12.TabStop = false;
+            this.groupBox12.Text = "YoLo Models";
+            // 
+            // radioButtonTestingCFG
+            // 
+            this.radioButtonTestingCFG.AutoSize = true;
+            this.radioButtonTestingCFG.Location = new System.Drawing.Point(283, 37);
+            this.radioButtonTestingCFG.Name = "radioButtonTestingCFG";
+            this.radioButtonTestingCFG.Size = new System.Drawing.Size(81, 17);
+            this.radioButtonTestingCFG.TabIndex = 3;
+            this.radioButtonTestingCFG.Text = "TestingCFG";
+            this.radioButtonTestingCFG.UseVisualStyleBackColor = true;
+            // 
+            // radioButtonTrainingCFG
+            // 
+            this.radioButtonTrainingCFG.AutoSize = true;
+            this.radioButtonTrainingCFG.Checked = true;
+            this.radioButtonTrainingCFG.Location = new System.Drawing.Point(283, 16);
+            this.radioButtonTrainingCFG.Name = "radioButtonTrainingCFG";
+            this.radioButtonTrainingCFG.Size = new System.Drawing.Size(87, 17);
+            this.radioButtonTrainingCFG.TabIndex = 2;
+            this.radioButtonTrainingCFG.TabStop = true;
+            this.radioButtonTrainingCFG.Text = "Training CFG";
+            this.radioButtonTrainingCFG.UseVisualStyleBackColor = true;
+            // 
+            // comboBoxYoloModel
+            // 
+            this.comboBoxYoloModel.FormattingEnabled = true;
+            this.comboBoxYoloModel.Items.AddRange(new object[] {
+            "YoloV3",
+            "YoloV3-Tiny",
+            "YoloV3-Tiny-PRN",
+            "YoloV3-SPP",
+            "csresnext50-panet-spp"});
+            this.comboBoxYoloModel.Location = new System.Drawing.Point(108, 17);
+            this.comboBoxYoloModel.Name = "comboBoxYoloModel";
+            this.comboBoxYoloModel.Size = new System.Drawing.Size(121, 21);
+            this.comboBoxYoloModel.TabIndex = 1;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(7, 20);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(95, 13);
+            this.label3.TabIndex = 0;
+            this.label3.Text = "Yolo Model to use:";
+            // 
+            // numericUpDownChannels
+            // 
+            this.numericUpDownChannels.Location = new System.Drawing.Point(256, 163);
+            this.numericUpDownChannels.Maximum = new decimal(new int[] {
+            4,
+            0,
+            0,
+            0});
+            this.numericUpDownChannels.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.numericUpDownChannels.Name = "numericUpDownChannels";
+            this.numericUpDownChannels.Size = new System.Drawing.Size(77, 20);
+            this.numericUpDownChannels.TabIndex = 15;
+            this.numericUpDownChannels.Value = new decimal(new int[] {
+            3,
+            0,
+            0,
+            0});
+            // 
+            // labelChannels
+            // 
+            this.labelChannels.AutoSize = true;
+            this.labelChannels.Location = new System.Drawing.Point(196, 165);
+            this.labelChannels.Name = "labelChannels";
+            this.labelChannels.Size = new System.Drawing.Size(54, 13);
+            this.labelChannels.TabIndex = 14;
+            this.labelChannels.Text = "Channels:";
             // 
             // groupBox8
             // 
@@ -943,103 +1037,59 @@
             this.comboBoxTypeOfScript.Size = new System.Drawing.Size(121, 21);
             this.comboBoxTypeOfScript.TabIndex = 0;
             // 
-            // labelChannels
+            // groupBox13
             // 
-            this.labelChannels.AutoSize = true;
-            this.labelChannels.Location = new System.Drawing.Point(196, 165);
-            this.labelChannels.Name = "labelChannels";
-            this.labelChannels.Size = new System.Drawing.Size(54, 13);
-            this.labelChannels.TabIndex = 14;
-            this.labelChannels.Text = "Channels:";
+            this.groupBox13.Controls.Add(this.buttonLoadNameFile);
+            this.groupBox13.Controls.Add(this.radioButtonLoadFromDataFile);
+            this.groupBox13.Controls.Add(this.radioButtonGenerateAllFiles);
+            this.groupBox13.Controls.Add(this.groupBox1);
+            this.groupBox13.Location = new System.Drawing.Point(758, 12);
+            this.groupBox13.Name = "groupBox13";
+            this.groupBox13.Size = new System.Drawing.Size(541, 233);
+            this.groupBox13.TabIndex = 4;
+            this.groupBox13.TabStop = false;
+            this.groupBox13.Text = "groupBox13";
             // 
-            // numericUpDownChannels
+            // buttonLoadNameFile
             // 
-            this.numericUpDownChannels.Location = new System.Drawing.Point(256, 163);
-            this.numericUpDownChannels.Maximum = new decimal(new int[] {
-            4,
-            0,
-            0,
-            0});
-            this.numericUpDownChannels.Minimum = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.numericUpDownChannels.Name = "numericUpDownChannels";
-            this.numericUpDownChannels.Size = new System.Drawing.Size(77, 20);
-            this.numericUpDownChannels.TabIndex = 15;
-            this.numericUpDownChannels.Value = new decimal(new int[] {
-            3,
-            0,
-            0,
-            0});
+            this.buttonLoadNameFile.Location = new System.Drawing.Point(448, 40);
+            this.buttonLoadNameFile.Name = "buttonLoadNameFile";
+            this.buttonLoadNameFile.Size = new System.Drawing.Size(75, 23);
+            this.buttonLoadNameFile.TabIndex = 4;
+            this.buttonLoadNameFile.Text = "Load .Name File";
+            this.buttonLoadNameFile.UseVisualStyleBackColor = true;
+            this.buttonLoadNameFile.Click += new System.EventHandler(this.buttonLoadNameFile_Click);
             // 
-            // groupBox12
+            // radioButtonLoadFromDataFile
             // 
-            this.groupBox12.Controls.Add(this.radioButtonTestingCFG);
-            this.groupBox12.Controls.Add(this.radioButtonTrainingCFG);
-            this.groupBox12.Controls.Add(this.comboBoxYoloModel);
-            this.groupBox12.Controls.Add(this.label3);
-            this.groupBox12.Location = new System.Drawing.Point(345, 16);
-            this.groupBox12.Name = "groupBox12";
-            this.groupBox12.Size = new System.Drawing.Size(374, 57);
-            this.groupBox12.TabIndex = 16;
-            this.groupBox12.TabStop = false;
-            this.groupBox12.Text = "YoLo Models";
+            this.radioButtonLoadFromDataFile.AutoSize = true;
+            this.radioButtonLoadFromDataFile.Location = new System.Drawing.Point(15, 43);
+            this.radioButtonLoadFromDataFile.Name = "radioButtonLoadFromDataFile";
+            this.radioButtonLoadFromDataFile.Size = new System.Drawing.Size(120, 17);
+            this.radioButtonLoadFromDataFile.TabIndex = 3;
+            this.radioButtonLoadFromDataFile.Text = "Load From Data File";
+            this.radioButtonLoadFromDataFile.UseVisualStyleBackColor = true;
             // 
-            // label3
+            // radioButtonGenerateAllFiles
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(7, 20);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(95, 13);
-            this.label3.TabIndex = 0;
-            this.label3.Text = "Yolo Model to use:";
-            // 
-            // comboBoxYoloModel
-            // 
-            this.comboBoxYoloModel.FormattingEnabled = true;
-            this.comboBoxYoloModel.Items.AddRange(new object[] {
-            "YoloV3",
-            "YoloV3-Tiny",
-            "YoloV3-Tiny-PRN",
-            "YoloV3-SPP",
-            "csresnext50-panet-spp"});
-            this.comboBoxYoloModel.Location = new System.Drawing.Point(108, 17);
-            this.comboBoxYoloModel.Name = "comboBoxYoloModel";
-            this.comboBoxYoloModel.Size = new System.Drawing.Size(121, 21);
-            this.comboBoxYoloModel.TabIndex = 1;
-            // 
-            // radioButtonTrainingCFG
-            // 
-            this.radioButtonTrainingCFG.AutoSize = true;
-            this.radioButtonTrainingCFG.Checked = true;
-            this.radioButtonTrainingCFG.Location = new System.Drawing.Point(283, 16);
-            this.radioButtonTrainingCFG.Name = "radioButtonTrainingCFG";
-            this.radioButtonTrainingCFG.Size = new System.Drawing.Size(87, 17);
-            this.radioButtonTrainingCFG.TabIndex = 2;
-            this.radioButtonTrainingCFG.TabStop = true;
-            this.radioButtonTrainingCFG.Text = "Training CFG";
-            this.radioButtonTrainingCFG.UseVisualStyleBackColor = true;
-            // 
-            // radioButtonTestingCFG
-            // 
-            this.radioButtonTestingCFG.AutoSize = true;
-            this.radioButtonTestingCFG.Location = new System.Drawing.Point(283, 37);
-            this.radioButtonTestingCFG.Name = "radioButtonTestingCFG";
-            this.radioButtonTestingCFG.Size = new System.Drawing.Size(81, 17);
-            this.radioButtonTestingCFG.TabIndex = 3;
-            this.radioButtonTestingCFG.Text = "TestingCFG";
-            this.radioButtonTestingCFG.UseVisualStyleBackColor = true;
+            this.radioButtonGenerateAllFiles.AutoSize = true;
+            this.radioButtonGenerateAllFiles.Checked = true;
+            this.radioButtonGenerateAllFiles.Location = new System.Drawing.Point(15, 19);
+            this.radioButtonGenerateAllFiles.Name = "radioButtonGenerateAllFiles";
+            this.radioButtonGenerateAllFiles.Size = new System.Drawing.Size(107, 17);
+            this.radioButtonGenerateAllFiles.TabIndex = 2;
+            this.radioButtonGenerateAllFiles.TabStop = true;
+            this.radioButtonGenerateAllFiles.Text = "Generate All Files";
+            this.radioButtonGenerateAllFiles.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1311, 658);
+            this.Controls.Add(this.groupBox13);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBoxGenConfigFiles);
-            this.Controls.Add(this.groupBox1);
             this.Name = "Form1";
             this.Text = "USTV Yolo file gen";
             this.groupBox1.ResumeLayout(false);
@@ -1055,6 +1105,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.groupBoxTrainingConfig.ResumeLayout(false);
             this.groupBoxTrainingConfig.PerformLayout();
+            this.groupBox12.ResumeLayout(false);
+            this.groupBox12.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownChannels)).EndInit();
             this.groupBox8.ResumeLayout(false);
             this.groupBox8.PerformLayout();
             this.groupBox9.ResumeLayout(false);
@@ -1075,9 +1128,8 @@
             this.groupBoxGPUTrain.PerformLayout();
             this.groupBox10.ResumeLayout(false);
             this.groupBox10.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownChannels)).EndInit();
-            this.groupBox12.ResumeLayout(false);
-            this.groupBox12.PerformLayout();
+            this.groupBox13.ResumeLayout(false);
+            this.groupBox13.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -1169,6 +1221,10 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.RadioButton radioButtonTestingCFG;
         private System.Windows.Forms.RadioButton radioButtonTrainingCFG;
+        private System.Windows.Forms.GroupBox groupBox13;
+        private System.Windows.Forms.Button buttonLoadNameFile;
+        private System.Windows.Forms.RadioButton radioButtonLoadFromDataFile;
+        private System.Windows.Forms.RadioButton radioButtonGenerateAllFiles;
     }
 }
 
