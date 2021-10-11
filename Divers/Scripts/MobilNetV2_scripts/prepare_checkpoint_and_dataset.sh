@@ -74,29 +74,29 @@ sed -i "s%DATASET_DIR_TO_CONFIGURE%${DATASET_DIR}%g" "${CKPT_DIR}/pipeline.confi
 echo "PREPARING dataset"
 mkdir -p "${DATASET_DIR}"
 cd "${DATASET_DIR}"
-wget http://www.robots.ox.ac.uk/~vgg/data/pets/data/images.tar.gz
-wget http://www.robots.ox.ac.uk/~vgg/data/pets/data/annotations.tar.gz
-tar zxf images.tar.gz
-tar zxf annotations.tar.gz
+# wget http://www.robots.ox.ac.uk/~vgg/data/pets/data/images.tar.gz
+# wget http://www.robots.ox.ac.uk/~vgg/data/pets/data/annotations.tar.gz
+# tar zxf images.tar.gz
+# tar zxf annotations.tar.gz
 
-echo "PREPARING dataset using first two classes of Oxford-IIIT Pet dataset..."
+# echo "PREPARING dataset using first two classes of Oxford-IIIT Pet dataset..."
 # Extract first two classes of data
-cp "${DATASET_DIR}/annotations/list.txt" "${DATASET_DIR}/annotations/list_petsdataset.txt"
-cp "${DATASET_DIR}/annotations/trainval.txt" "${DATASET_DIR}/annotations/trainval_petsdataset.txt"
-cp "${DATASET_DIR}/annotations/test.txt" "${DATASET_DIR}/annotations/test_petsdataset.txt"
-grep "Abyssinian" "${DATASET_DIR}/annotations/list_petsdataset.txt" >  "${DATASET_DIR}/annotations/list.txt"
-grep "american_bulldog" "${DATASET_DIR}/annotations/list_petsdataset.txt" >> "${DATASET_DIR}/annotations/list.txt"
-grep "Abyssinian" "${DATASET_DIR}/annotations/trainval_petsdataset.txt" > "${DATASET_DIR}/annotations/trainval.txt"
-grep "american_bulldog" "${DATASET_DIR}/annotations/trainval_petsdataset.txt" >> "${DATASET_DIR}/annotations/trainval.txt"
-grep "Abyssinian" "${DATASET_DIR}/annotations/test_petsdataset.txt" > "${DATASET_DIR}/annotations/test.txt"
-grep "american_bulldog" "${DATASET_DIR}/annotations/test_petsdataset.txt" >> "${DATASET_DIR}/annotations/test.txt"
+# cp "${DATASET_DIR}/annotations/list.txt" "${DATASET_DIR}/annotations/list_petsdataset.txt"
+# cp "${DATASET_DIR}/annotations/trainval.txt" "${DATASET_DIR}/annotations/trainval_petsdataset.txt"
+# cp "${DATASET_DIR}/annotations/test.txt" "${DATASET_DIR}/annotations/test_petsdataset.txt"
+# grep "Abyssinian" "${DATASET_DIR}/annotations/list_petsdataset.txt" >  "${DATASET_DIR}/annotations/list.txt"
+# grep "american_bulldog" "${DATASET_DIR}/annotations/list_petsdataset.txt" >> "${DATASET_DIR}/annotations/list.txt"
+# grep "Abyssinian" "${DATASET_DIR}/annotations/trainval_petsdataset.txt" > "${DATASET_DIR}/annotations/trainval.txt"
+# grep "american_bulldog" "${DATASET_DIR}/annotations/trainval_petsdataset.txt" >> "${DATASET_DIR}/annotations/trainval.txt"
+# grep "Abyssinian" "${DATASET_DIR}/annotations/test_petsdataset.txt" > "${DATASET_DIR}/annotations/test.txt"
+# grep "american_bulldog" "${DATASET_DIR}/annotations/test_petsdataset.txt" >> "${DATASET_DIR}/annotations/test.txt"
 
 echo "PREPARING label map..."
 cd "${OBJ_DET_DIR}"
-cp "object_detection/data/pet_label_map.pbtxt" "${DATASET_DIR}"
+cp "Divers/LabelMap/MSL_label_map.pbtxt" "${DATASET_DIR}"
 
-echo "CONVERTING dataset to TF Record..."
-python object_detection/dataset_tools/create_pet_tf_record.py \
-    --label_map_path="${DATASET_DIR}/pet_label_map.pbtxt" \
-    --data_dir="${DATASET_DIR}" \
-    --output_dir="${DATASET_DIR}"
+# echo "CONVERTING dataset to TF Record..."
+# python object_detection/dataset_tools/create_pet_tf_record.py \
+    # --label_map_path="${DATASET_DIR}/pet_label_map.pbtxt" \
+    # --data_dir="${DATASET_DIR}" \
+    # --output_dir="${DATASET_DIR}"
