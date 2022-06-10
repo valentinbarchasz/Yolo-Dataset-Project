@@ -1,0 +1,475 @@
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\0019.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\0020.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\0027.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\0032.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\0034.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\0037.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\0052.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\0064.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\0066.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\0135.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\0136.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\0147.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\0150.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\0151.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\0154.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\0156.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\0171.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\0176.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\0178.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\0179.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\0181.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\0204.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\0209.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\0230.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\0231.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\0246.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\0250.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\0251.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\0260.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\0261.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\0281.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\0284.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\0291.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\0301.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\0305.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\0308.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\0323.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\0334.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\0354.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\0355.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\0368.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\0393.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\0404.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\0408.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\0414.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\0418.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\0426.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\0464.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\0492.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\0508.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\0510.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\0513.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\0530.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\0537.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\0545.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\0584.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\0600.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\0611.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\0647.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\0654.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\0700.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\0707.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\0709.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\0729.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\0746.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\0752.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\0757.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\0764.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\0775.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\0777.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\0781.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\0785.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\0787.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\0788.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\0806.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\0807.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\0814.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\0815.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\0818.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\0825.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\0833.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\0845.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\0846.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\0859.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\0862.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\0868.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\0886.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\0888.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\0889.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\0892.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\0895.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\0912.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\0917.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\0937.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\0942.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\0948.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\0962.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\0974.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\0977.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\0981.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\0987.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\0992.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\1001.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\1005.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\1006.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\1018.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\1027.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\1034.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\1045.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\1049.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\1051.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\1071.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\1081.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\1088.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\1089.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\1107.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\1108.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\1110.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\1111.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\1115.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\1121.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\1123.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\1136.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\1151.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\1155.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\1166.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\1170.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\1192.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\1200.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\1204.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\1220.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\1222.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\1226.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\1231.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\1273.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\1274.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\1279.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\1286.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\1289.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\1296.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\1297.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\1310.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\1316.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\1317.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\1318.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\1325.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\1344.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\1345.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\1359.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\1360.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\1376.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\1381.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\1405.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\1409.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\1410.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\1411.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\1412.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\1414.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\1415.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\1437.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\1453.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\capture-18-38-30.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\capture-18-39-30.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\capture-18-39-45.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\capture-18-40-0.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\capture-18-40-45.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\capture-18-41-20.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\capture-18-42-55.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\capture-18-43-10.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\capture-18-43-15.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\capture-18-44-0.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\capture-18-44-50.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\capture-18-44-55.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\capture-18-45-10.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\capture-18-46-45.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\capture-18-48-0.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\capture-18-48-10.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\capture-18-48-25.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\capture-18-48-45.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\capture-18-48-50.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\capture-18-49-15.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\capture-18-49-20.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\capture-18-51-35.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\capture-18-52-25.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\capture-18-53-10.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\capture-18-53-25.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\capture-18-54-10.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\capture-18-55-15.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\capture-18-56-0.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\capture-18-57-35.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\capture-18-57-50.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\capture-18-58-30.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\capture-19-0-10.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\capture-19-1-55.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\capture-19-2-20.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\capture-19-2-45.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\capture-7-19-40.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\capture-7-20-20.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\capture-7-21-55.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\capture-7-43-30.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\capture-7-44-10.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\capture-7-45-0.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\capture-7-45-10.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\capture-7-45-40.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\capture-7-45-55.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\capture-7-46-10.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\capture-7-46-20.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\capture-7-46-30.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\capture-7-46-45.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\capture-7-47-0.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\capture-8-20-45.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\capture-8-21-24.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\capture-8-21-52.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\capture-8-21-54.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\capture-8-22-18.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\capture-8-22-28.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\capture-8-22-32.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\capture-8-22-34.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\capture-8-22-36.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\capture-8-22-4.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\capture-8-22-44.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\capture-8-22-46.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\capture-8-22-50.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\capture-8-22-6.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\capture-8-23-6.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\Robot-01-08-2019 22_47_31.71.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\Robot-01-08-2019 22_47_32.81.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\Robot-01-08-2019 22_47_32.99.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\Robot-01-08-2019 22_47_33.17.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\Robot-01-08-2019 22_47_33.35.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\Robot-01-08-2019 22_47_33.57.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\Robot-01-08-2019 22_47_33.79.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\Robot-01-08-2019 22_47_34.0.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\Robot-01-08-2019 22_47_34.19.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\Robot-01-08-2019 22_47_34.41.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\Robot-01-08-2019 22_47_34.59.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\Robot-01-08-2019 22_47_34.78.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\Robot-01-08-2019 22_47_34.99.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\Robot-01-08-2019 22_47_35.17.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\Robot-01-08-2019 22_47_35.34.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\Robot-01-08-2019 22_47_35.52.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\Robot-01-08-2019 22_47_35.71.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\Robot-01-08-2019 22_47_35.91.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\Robot-01-08-2019 22_47_36.09.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\Robot-01-08-2019 22_47_36.27.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\Robot-01-08-2019 22_47_36.45.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\Robot-01-08-2019 22_47_36.62.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\Robot-01-08-2019 22_47_36.8.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\Robot-01-08-2019 22_47_36.97.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\Robot-01-08-2019 22_47_37.15.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\Robot-01-08-2019 22_47_37.33.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\Robot-01-08-2019 22_47_37.54.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\Robot-01-08-2019 22_47_37.73.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\Robot-01-08-2019 22_47_37.94.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\Robot-01-08-2019 22_47_38.12.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\Robot-01-08-2019 22_47_38.33.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\Robot-01-08-2019 22_47_38.51.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\Robot-01-08-2019 22_47_38.68.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\Robot-01-08-2019 22_47_38.87.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\Robot-01-08-2019 22_47_39.09.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\Robot-01-08-2019 22_47_39.3.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\Robot-01-08-2019 22_47_39.47.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\Robot-01-08-2019 22_47_39.66.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\Robot-01-08-2019 22_47_39.87.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\Robot-01-08-2019 22_47_40.08.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\Robot-01-08-2019 22_47_40.27.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\Robot-01-08-2019 22_47_40.48.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\Robot-01-08-2019 22_47_40.65.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\Robot-01-08-2019 22_47_40.83.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\Robot-01-08-2019 22_47_41.01.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\Robot-01-08-2019 22_47_41.2.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\Robot-01-08-2019 22_47_41.37.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\Robot-01-08-2019 22_47_41.55.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\Robot-01-08-2019 22_47_41.72.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\Robot-01-08-2019 22_47_41.9.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\Robot-01-08-2019 22_47_42.08.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\Robot-01-08-2019 22_47_42.26.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\Robot-01-08-2019 22_47_42.44.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\Robot-01-08-2019 22_47_42.66.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\Robot-01-08-2019 22_47_42.86.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\Robot-01-08-2019 22_47_43.05.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\Robot-01-08-2019 22_47_43.27.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\Robot-01-08-2019 22_47_43.48.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\Robot-01-08-2019 22_47_43.67.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\Robot-01-08-2019 22_47_43.89.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\Robot-01-08-2019 22_47_44.1.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\Robot-01-08-2019 22_47_44.32.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\Robot-01-08-2019 22_47_44.54.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\Robot-01-08-2019 22_47_44.76.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\Robot-01-08-2019 22_47_44.93.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\Robot-01-08-2019 22_47_45.11.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\Robot-01-08-2019 22_47_45.29.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\Robot-01-08-2019 22_47_45.46.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\Robot-01-08-2019 22_47_45.64.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\Robot-01-08-2019 22_47_45.82.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\Robot-01-08-2019 22_47_45.99.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\Robot-01-08-2019 22_47_46.18.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\Robot-01-08-2019 22_47_46.4.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\Robot-01-08-2019 22_47_46.61.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\Robot-01-08-2019 22_47_46.78.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\Robot-01-08-2019 22_47_46.97.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\Robot-01-08-2019 22_47_47.18.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\Robot-01-08-2019 22_47_47.39.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\Robot-01-08-2019 22_47_47.57.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\Robot-01-08-2019 22_47_47.75.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\Robot-01-08-2019 22_47_47.94.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\Robot-01-08-2019 22_47_48.15.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\Robot-01-08-2019 22_47_48.36.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\Robot-01-08-2019 22_47_48.54.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\Robot-01-08-2019 22_47_48.72.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\Robot-01-08-2019 22_47_48.94.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\Robot-01-08-2019 22_47_49.15.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\Robot-01-08-2019 22_47_49.32.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\Robot-01-08-2019 22_47_49.51.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\Robot-01-08-2019 22_47_49.72.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\Robot-01-08-2019 22_47_49.9.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\Robot-01-08-2019 22_47_50.09.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\Robot-01-08-2019 22_47_50.29.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\Robot-01-08-2019 22_47_50.48.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\Robot-01-08-2019 22_47_50.69.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\Robot-01-08-2019 22_47_50.91.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\Robot-01-08-2019 22_47_51.11.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\Robot-01-08-2019 22_47_51.3.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\Robot-01-08-2019 22_47_51.5.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\Robot-01-08-2019 22_47_51.69.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\Robot-01-08-2019 22_47_51.9.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\Robot-01-08-2019 22_47_52.12.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\Robot-01-08-2019 22_47_52.34.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\Robot-01-08-2019 22_47_52.55.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\Robot-01-08-2019 22_47_52.73.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\Robot-01-08-2019 22_47_52.94.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\Robot-01-08-2019 22_47_53.12.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\Robot-01-08-2019 22_47_53.29.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\Robot-01-08-2019 22_47_53.47.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\Robot-01-08-2019 22_47_53.69.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\Robot-01-08-2019 22_47_53.9.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\Robot-01-08-2019 22_47_54.08.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\Robot-01-08-2019 22_47_54.27.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\Robot-01-08-2019 22_47_54.48.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\Robot-01-08-2019 22_47_54.65.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\Robot-01-08-2019 22_47_54.83.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\Robot-01-08-2019 22_47_55.02.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\Robot-01-08-2019 22_47_55.23.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\Robot-01-08-2019 22_47_55.41.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\Robot-01-08-2019 22_47_55.6.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\Robot-01-08-2019 22_47_55.82.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\Robot-01-08-2019 22_47_56.03.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\Robot-01-08-2019 22_47_56.2.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\Robot-01-08-2019 22_47_56.38.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\Robot-01-08-2019 22_47_56.56.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\Robot-01-08-2019 22_47_56.77.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\Robot-01-08-2019 22_47_56.96.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\Robot-01-08-2019 22_47_57.17.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\Robot-01-08-2019 22_47_57.35.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\Robot-01-08-2019 22_47_57.56.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\Robot-01-08-2019 22_47_57.75.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\Robot-01-08-2019 22_47_57.96.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\Robot-01-08-2019 22_47_58.15.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\Robot-01-08-2019 22_47_58.37.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\Robot-01-08-2019 22_47_58.58.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\Robot-01-08-2019 22_47_58.76.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\Robot-01-08-2019 22_47_58.93.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\Robot-01-08-2019 22_47_59.1.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\Robot-01-08-2019 22_47_59.29.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\Robot-01-08-2019 22_47_59.5.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\Robot-01-08-2019 22_47_59.69.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\Robot-01-08-2019 22_47_59.9.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\Robot-01-08-2019 22_48_00.08.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\Robot-01-08-2019 22_48_00.26.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\Robot-01-08-2019 22_48_00.48.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\Robot-01-08-2019 22_48_00.7.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\Robot-01-08-2019 22_48_00.92.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\Robot-01-08-2019 22_48_01.0.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\Robot-01-08-2019 22_48_01.14.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\Robot-01-08-2019 22_48_01.35.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\Robot-01-08-2019 22_48_01.57.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\Robot-01-08-2019 22_48_01.79.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\Robot-01-08-2019 22_48_02.19.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\Robot-01-08-2019 22_48_02.4.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\Robot-01-08-2019 22_48_02.58.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\Robot-01-08-2019 22_48_02.79.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\Robot-01-08-2019 22_48_02.97.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\Robot-01-08-2019 22_48_03.15.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\Robot-01-08-2019 22_48_03.34.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\Robot-01-08-2019 22_48_03.54.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\Robot-01-08-2019 22_48_03.72.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\Robot-01-08-2019 22_48_03.9.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\Robot-01-08-2019 22_48_04.08.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\Robot-01-08-2019 22_48_04.3.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\Robot-01-08-2019 22_48_04.51.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\Robot-01-08-2019 22_48_04.69.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\Robot-01-08-2019 22_48_04.91.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\Robot-01-08-2019 22_48_05.09.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\Robot-01-08-2019 22_48_05.3.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\Robot-01-08-2019 22_48_05.48.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\Robot-01-08-2019 22_48_05.66.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\Robot-01-08-2019 22_48_05.88.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\Robot-01-08-2019 22_48_06.0.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\Robot-01-08-2019 22_48_06.06.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\Robot-01-08-2019 22_48_06.23.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\Robot-01-08-2019 22_48_06.41.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\Robot-01-08-2019 22_48_06.59.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\Robot-01-08-2019 22_48_06.78.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\Robot-01-08-2019 22_48_07.21.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\Robot-01-08-2019 22_48_07.38.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\Robot-01-08-2019 22_48_07.56.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\Robot-01-08-2019 22_48_07.74.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\Robot-01-08-2019 22_48_07.92.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\Robot-01-08-2019 22_48_08.11.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\Robot-01-08-2019 22_48_08.32.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\Robot-01-08-2019 22_48_08.5.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\Robot-01-08-2019 22_48_08.72.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\Robot-01-08-2019 22_48_08.94.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\Robot-01-08-2019 22_48_09.15.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\Robot-01-08-2019 22_48_09.32.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\Robot-01-08-2019 22_48_09.5.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\Robot-01-08-2019 22_48_09.68.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\Robot-01-08-2019 22_48_09.87.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\Robot-01-08-2019 22_48_10.08.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\Robot-01-08-2019 22_48_10.26.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\Robot-01-08-2019 22_48_10.44.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\Robot-01-08-2019 22_48_10.65.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\Robot-01-08-2019 22_48_10.84.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\Robot-01-08-2019 22_48_11.05.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\Robot-01-08-2019 22_48_11.24.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\Robot-01-08-2019 22_48_11.45.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\Robot-01-08-2019 22_48_11.63.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\Robot-01-08-2019 22_48_11.84.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\Robot-01-08-2019 22_48_12.02.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\Robot-01-08-2019 22_48_12.21.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\Robot-01-08-2019 22_48_12.43.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\Robot-01-08-2019 22_48_12.63.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\Robot-01-08-2019 22_48_12.81.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\Robot-01-08-2019 22_48_12.99.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\Robot-01-08-2019 22_48_13.18.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\Robot-01-08-2019 22_48_13.39.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\Robot-01-08-2019 22_48_13.57.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\Robot-01-08-2019 22_48_13.75.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\Robot-01-08-2019 22_48_13.96.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\Robot-01-08-2019 22_48_14.15.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\Robot-01-08-2019 22_48_14.37.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\Robot-01-08-2019 22_48_14.54.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\Robot-01-08-2019 22_48_14.73.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\Robot-01-08-2019 22_48_14.94.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\Robot-01-08-2019 22_48_15.13.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\Robot-01-08-2019 22_48_15.3.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\Robot-01-08-2019 22_48_15.48.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\Robot-01-08-2019 22_48_15.66.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\Robot-01-08-2019 22_48_15.84.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\Robot-01-08-2019 22_48_16.02.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\Robot-01-08-2019 22_48_16.2.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\Robot-01-08-2019 22_48_16.41.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\Robot-01-08-2019 22_48_16.59.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\Robot-01-08-2019 22_48_16.77.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\Robot-01-08-2019 22_48_16.95.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\Robot-01-08-2019 22_48_17.16.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\Robot-01-08-2019 22_48_17.34.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\Robot-01-08-2019 22_48_17.53.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\Robot-01-08-2019 22_48_17.73.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\Robot-01-08-2019 22_48_17.91.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\Robot-01-08-2019 22_48_18.1.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\Robot-01-08-2019 22_48_18.32.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\Robot-01-08-2019 22_48_18.53.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\Robot-01-08-2019 22_48_18.74.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\Robot-01-08-2019 22_48_18.92.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\Robot-01-08-2019 22_48_19.1.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\Robot-01-08-2019 22_48_19.28.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\Robot-01-08-2019 22_48_19.47.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\Robot-01-08-2019 22_48_19.68.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\Robot-01-08-2019 22_48_19.87.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\Robot-01-08-2019 22_48_20.08.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\Robot-01-08-2019 22_48_20.26.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\Robot-01-08-2019 22_48_20.47.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\Robot-01-08-2019 22_48_20.66.jpg
+C:\Github\Yolo-Dataset-Project\ImagesDatasets\robocup-MSL-dataset\Output\1C_ball_nubot_rct\val\Robot-01-08-2019 22_48_20.88.jpg
