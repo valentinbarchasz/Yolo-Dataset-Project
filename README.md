@@ -1,7 +1,8 @@
 # MSL-Dataset-Labeling
 ![RCT Logo](https://rct.univ-tln.fr/wp-content/uploads/IMG_0206-1.jpg)
 
-The dataset of robot's images containt 3 classes of object:
+The dataset of robot's images containt 8 classes of object.
+Respect this order when creating a deeplabel project:
 
 * robot
 * ballon
@@ -11,6 +12,14 @@ The dataset of robot's images containt 3 classes of object:
 * joueur_rouge
 * robot_rct
 * humain
+
+
+## Warning for exports :
+Sometimes for already labelled datasets the class order is robot, ballon, but ...
+sometimes robot, human, but ...
+You want to modify the classes order if fusing multiple datasets. Double check the batch once they are created to be sure a robot is not labelled as ballon for instance.
+
+## This dataset contains :
 
 * Images set of Robots (Set from [NuBot Dataset](https://github.com/Abbyls/robocup-MSL-dataset) with more images added)
 * Images set of Robots and Ball from our robot's omnivision camera
