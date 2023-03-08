@@ -3,14 +3,14 @@
 
 The dataset of robot's images containt 3 classes of object:
 
-robot
-ballon
-but
-poteau
-joueur_bleu
-joueur_rouge
-robot_rct
-humain
+* robot
+* ballon
+* but
+* poteau
+* joueur_bleu
+* joueur_rouge
+* robot_rct
+* humain
 
 * Images set of Robots (Set from [NuBot Dataset](https://github.com/Abbyls/robocup-MSL-dataset) with more images added)
 * Images set of Robots and Ball from our robot's omnivision camera
